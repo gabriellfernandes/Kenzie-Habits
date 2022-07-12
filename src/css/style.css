@@ -740,9 +740,16 @@ input:checked {
         background-color: #e02b2b;
     }
 
-    #modal__loginbuttonerror{
+    #modal__loginbutton{
         background-color: #E64445;
+        margin-left: 10px;
         color: #212529;
+        font-weight: bold;
         border: none;
+    }
+
+    #modal__loginerror:hover #modal__loginbutton{
+        background-color: #e02b2b;
+        color: white;
     }
 }
