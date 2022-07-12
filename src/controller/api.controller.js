@@ -82,7 +82,7 @@ export class Api {
     }
 
     static async apiCompleteHabit(id) {
-        return await fetch(`${this.baseUrl}/habit/complete${id}`, {
+        return await fetch(`${this.baseUrl}/habit/complete${id}`, { 
             method: 'PATCH',
             headers: this.headers}).then(res => res.json()).then(res => res).catch(err => console.log(err));
     }
