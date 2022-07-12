@@ -1,4 +1,4 @@
-/* #login__modal {
+#login__modal {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -12,8 +12,11 @@
     flex-direction: column;
 }
 
-#login__container {
-}
+
+
+#login__container {}
+
+
 
 #login__inner {
     background: #4150D2;
@@ -24,6 +27,8 @@
     flex-direction: column;
     height: 700px;
 }
+
+
 
 #login__title {
     font-family: 'Poppins';
@@ -39,6 +44,8 @@
     margin-top: 20px;
 }
 
+
+
 #login__subtitle {
     font-family: 'Inter';
     font-style: normal;
@@ -51,6 +58,8 @@
     justify-content: center;
     flex-direction: column;
 }
+
+
 
 #login__paragraph {
     font-family: 'Inter';
@@ -65,6 +74,8 @@
     flex-direction: column;
 }
 
+
+
 #login__form {
     background: #FFFFFF;
     box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
@@ -76,6 +87,8 @@
     height: 400px;
 }
 
+
+
 #login__login {
     font-family: 'Inter';
     font-style: normal;
@@ -85,6 +98,8 @@
     text-align: center;
 }
 
+
+
 #login__user {
     font-family: 'Inter';
     font-style: normal;
@@ -93,6 +108,8 @@
     color: #343A40;
     margin-right: 240px;
 }
+
+
 
 #login__emailInput {
     border: none;
@@ -110,6 +127,8 @@
     margin-top: 1px;
 }
 
+
+
 #login__password {
     font-family: 'Inter';
     font-style: normal;
@@ -118,6 +137,8 @@
     color: #343A40;
     margin-right: 250px;
 }
+
+
 
 #login__passwordInput {
     border: none;
@@ -135,6 +156,8 @@
     margin-top: 1px;
 }
 
+
+
 #login__submitButton {
     background: #415AF3;
     border: 2px solid #415AF3;
@@ -149,13 +172,14 @@
     font-size: 20px;
 }
 
+
+
 #login__submitButton:hover {
     background: #A0ADF9;
-} */
+}
 
 
 
-/* 
 #create__modal {
     width: 100vw;
     height: 100vh;
@@ -168,15 +192,23 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    display: none;
 }
+
+
 
 #create__inner {
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: 305px;
+    width: 35%;
+    min-width: 300px;
     height: 466px;
+    display: none;
+
 }
 
+
+/* Preciso concertar o Botão X */
 #create__close {
     background: none;
     border: none;
@@ -185,9 +217,11 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    margin-left: 260px;
-    margin-top: 25px;
+    margin-right: 50px;
+    margin-top: 0px;
 }
+
+
 
 #create__title {
     width: 114px;
@@ -202,6 +236,8 @@
     margin-bottom: 37px;
 }
 
+
+
 #create__habitTitle {
     width: 38px;
     height: 17px;
@@ -214,12 +250,14 @@
     margin-bottom: 8px;
 }
 
+
+
 #create__habitInput {
     gap: 10px;
     background: #F1F3F5;
     border: 2px solid #F1F3F5;
     border-radius: 4px;
-    width: 277px;
+    width: 90%;
     height: 40px;
     font-family: 'Inter';
     font-style: normal;
@@ -228,6 +266,8 @@
     margin-left: 14px;
 }
 
+
+
 #create__habitInput::placeholder {
     color: #343A40;
     font-family: 'Inter';
@@ -235,6 +275,8 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+
 
 #create__description {
     width: 66px;
@@ -249,6 +291,8 @@
     margin-bottom: 8px;
 }
 
+
+
 #create__descriptionInput {
     font-family: 'Inter';
     color: #343A40;
@@ -256,13 +300,15 @@
     font-weight: 400;
     font-size: 16px;
     gap: 10px;
-    width: 277px;
+    width: 90%;
     height: 80px;
     background: #F1F3F5;
     border: 2px solid #F1F3F5;
     border-radius: 4px;
     margin-left: 14px;
 }
+
+
 
 #create__descriptionInput::placeholder {
     color: #343A40;
@@ -271,6 +317,8 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+
 
 #create__category {
     font-family: 'Inter';
@@ -285,8 +333,10 @@
     margin-bottom: 8px;
 }
 
+
+
 #create__select {
-    width: 277px;
+    width: 90%;
     height: 40px;
     background: #F1F3F5;
     gap: 10px;
@@ -301,6 +351,8 @@
     margin-bottom: 24px;
 }
 
+
+
 #create__submitButton {
     background: #415AF3;
     border: 2px solid #415AF3;
@@ -311,13 +363,11 @@
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
-    width: 277px;
+    width: 90%;
     height: 40px;
     margin-left: 14px;
     margin-bottom: 24px;
-} */
-
-
+}
 
 #edit__modal {
     /* background-color:#FFFFFF ; */
@@ -332,15 +382,21 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    display: none;
 }
+
+
 
 #edit__inner {
     background-color: #FFFFFF;
     border-radius: 8px;
-    width: 305px;
+    width: 35%;
+    min-width: 300px;
     height: 466px;
 }
 
+
+/* Concertar o Botão CLose */
 #edit__close {
     background: none;
     border: none;
@@ -352,6 +408,8 @@
     margin-left: 260px;
     margin-top: 25px;
 }
+
+
 
 #edit__title {
     width: 150px;
@@ -366,6 +424,8 @@
     margin-bottom: 20px;
 }
 
+
+
 #edit__habitTitle {
     width: 38px;
     height: 17px;
@@ -378,12 +438,14 @@
     margin-bottom: 8px;
 }
 
+
+
 #edit__habitInput {
     gap: 10px;
     background: #F1F3F5;
     border: 2px solid #F1F3F5;
     border-radius: 4px;
-    width: 277px;
+    width: 92%;
     height: 40px;
     font-family: 'Inter';
     font-style: normal;
@@ -392,6 +454,8 @@
     margin-left: 14px;
 }
 
+
+
 #edit__habitInput::placeholder {
     color: #343A40;
     font-family: 'Inter';
@@ -399,6 +463,8 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+
 
 #edit__description {
     width: 66px;
@@ -413,6 +479,8 @@
     margin-bottom: 8px;
 }
 
+
+
 #edit__descriptionInput {
     font-family: 'Inter';
     color: #343A40;
@@ -420,13 +488,15 @@
     font-weight: 400;
     font-size: 16px;
     gap: 10px;
-    width: 277px;
+    width: 92%;
     height: 80px;
     background: #F1F3F5;
     border: 2px solid #F1F3F5;
     border-radius: 4px;
     margin-left: 14px;
 }
+
+
 
 #edit__descriptionInput::placeholder {
     color: #343A40;
@@ -435,6 +505,8 @@
     font-weight: 400;
     font-size: 16px;
 }
+
+
 
 #edit__category {
     font-family: 'Inter';
@@ -449,8 +521,10 @@
     margin-bottom: 8px;
 }
 
+
+
 #edit__select {
-    width: 277px;
+    width: 92%;
     height: 40px;
     background: #F1F3F5;
     gap: 10px;
@@ -465,14 +539,18 @@
     margin-bottom: 2px;
 }
 
+
+
 #edit__check {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     gap: 200px;
     margin-bottom: 20px;
     margin-top: 10px
 }
+
+
 
 #edit__status {
     font-family: 'Inter';
@@ -482,19 +560,23 @@
     color: #343A40;
 }
 
+
+
 #edit__checkbox:checked {
-    /* content: "";
+    content: "";
     display: block;
     position: absolute;
     width: 20px;
     height: 20px;
     top: 0;
-    left: 0; */
-    /* background-color: #33ef1e; */
+    left: 0;
+    background-color: #33ef1e;
 }
 
+
+
 input[type=checkbox] {
-    /* background-color: #33ef1e; */
+    background-color: #33ef1e;
     all: unset;
     border: 1px solid black;
     border: 1.4px solid #ADB5BD;
@@ -504,6 +586,8 @@ input[type=checkbox] {
     display: inline-block;
 }
 
+
+
 input:checked {
     background-color: #56CF8E;
     border: none;
@@ -511,6 +595,8 @@ input:checked {
     height: 10px;
     background-image: url(/src/assets/img/check.png);
 }
+
+
 
 #edit__delete {
     background: #F1F3F5;
@@ -526,10 +612,14 @@ input:checked {
     margin-left: 20px;
 }
 
+
+
 #edit__delete:hover {
     cursor: pointer;
 }
 
+
+/* Concertar Botão de deletar */
 #edit__submitButton {
     background: #A0ADF9;
     border: 2px solid #A0ADF9;
@@ -546,8 +636,90 @@ input:checked {
     margin-bottom: 24px;
 }
 
+
+
 #edit__submitButton:hover {
     cursor: pointer;
     background-color: #415AF3;
     border: 2px solid #415AF3;
+}
+
+@media(min-width: 850px) {
+
+    #login__inner {
+        display: flex;
+        width: 70vw;
+        height: 400px;
+        flex-direction: row;
+        border-radius: 15px;
+    }
+
+
+
+    #login__Call {
+        width: 50%;
+        display: flex;
+        min-height: 300px;
+        min-width: 300px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    #login__title {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20px;
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+
+
+    #login__subtitle,
+    #login__paragraph {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+
+
+    #login__inner form {
+        padding: 20px;
+        width: 50%;
+        min-width: 300px;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+
+
+    #login__login{
+        margin-bottom: 50px;
+    }
+
+
+    
+    #login__inner p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+
+    #login__inner input{
+        width: 95%;
+        margin: 0 auto;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
 }
