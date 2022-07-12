@@ -1,11 +1,10 @@
-class Modais{
+export class Modais{
    
     static createModals(){
 
 
+  // Criação do Modal de  Login
  
-  // Criação do Modal de  Loginl
- /*
       const login__modal = document.createElement('div');
       login__modal.setAttribute('id','login__modal');
   
@@ -81,9 +80,21 @@ class Modais{
   
       login__form.append(login__login, login__user, login__emailInput, login__password, login__passwordInput, login__submitButton);
   
+
+
+
+      const modal__loginerror = document.createElement('div');
+      modal__loginerror.setAttribute('id','modal__loginerror');
+
+      const paragraph__error = document.createElement('p');
+      paragraph__error.innerText = "Error";
+
+      const modal__loginbutton = document.createElement('button');
+      modal__loginbutton.setAttribute('id','modal__loginbutton');
+      modal__loginbutton.innerText = "X";
+
+
   
-  
-  */
   
   
     
@@ -249,4 +260,3 @@ class Modais{
   
   }
   
-  Modais.createModals();
