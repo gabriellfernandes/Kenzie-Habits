@@ -722,4 +722,29 @@ input:checked {
         margin-bottom: 20px;
     }
 
+    #modal__loginerror{
+        display: none;
+        background-color: #E64445;
+        border-radius: 12px;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 10%;
+        right: 47%;
+        z-index: 1;
+        cursor: pointer;
+    }
+    
+    #modal__loginerror:hover{
+        background-color: #e02b2b;
+    }
+
+    #modal__loginbuttonerror{
+        background-color: #E64445;
+        color: #212529;
+        border: none;
+    }
 }
