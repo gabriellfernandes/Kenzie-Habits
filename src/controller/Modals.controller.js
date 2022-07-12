@@ -3,11 +3,9 @@ class Modais{
     static createModals(){
 
 
-
-  
+ 
   // Criação do Modal de  Loginl
-  
-  
+ /*
       const login__modal = document.createElement('div');
       login__modal.setAttribute('id','login__modal');
   
@@ -15,8 +13,9 @@ class Modais{
       const login__inner = document.createElement('div');
       login__inner.setAttribute('id','login__inner');
 
-      const login__call =  document.createElement('div');
-      login__call.setAttribute('id','login__call');
+
+      const login__Call =  document.createElement('div');
+      login__Call.setAttribute('id','login__Call');
   
       
    
@@ -36,11 +35,12 @@ class Modais{
   
   
       const login__form =  document.createElement('form');
-      login__form.setAttribute('id','login_form');
+      login__form.setAttribute('id','login__form');
+
   
   
       const login__login = document.createElement('h2');
-      login__login.setAttribute('id','login_login');
+      login__login.setAttribute('id','login__login');
       login__login.innerText = "Login"
   
   
@@ -75,15 +75,15 @@ class Modais{
       login__modal.appendChild(login__inner);
 
        
-      login__inner.append(login__call, login__form);
+      login__inner.append(login__Call, login__form);
 
-      login__call.append(login__title, login__subtitle, login__paragraph);
+      login__Call.append(login__title, login__subtitle, login__paragraph);
   
       login__form.append(login__login, login__user, login__emailInput, login__password, login__passwordInput, login__submitButton);
   
   
   
-  
+  */
   
   
     
@@ -156,7 +156,7 @@ class Modais{
   
   
   
-  
+ 
   
 // Criação do Modal de Editar
   const edit__modal = document.createElement('div');
