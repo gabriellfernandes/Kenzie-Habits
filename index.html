@@ -26,11 +26,13 @@
 
 <body>
 
-  <!-- <div id="login__modal">
+  <div id="login__modal">
     <div id="login__inner">
-      <h1 id="login__title">KenzieHabit</h1>
-      <h2 id="login__subtitle">If you are going to use a passage of Lorem Ipsum</h2>
-      <p id="login__paragraph">you need to be sure there isn't anything</p>
+      <div id="login_call">
+        <h1 id="login__title">KenzieHabit</h1>
+        <h2 id="login__subtitle">If you are going to use a passage of Lorem Ipsum</h2>
+        <p id="login__paragraph">you need to be sure there isn't anything</p>
+      </div>
       <form id="login__form" action="#">
         <h2 id="login__login">Login</h2>
         <p id="login__user">Usuário</p>
@@ -40,9 +42,13 @@
         <button id="login__submitButton" type="submit">Entrar</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
-  <!-- 
+  <div id="modal__loginerror">
+    <p>Error</p>
+    <button id="modal__loginbutton">X</button>
+  </div>
+
   <div id="create__modal">
     <div id="create__inner">
       <button id="create__close">X</button>
@@ -64,10 +70,10 @@
         <button id="create__submitButton" type="submit">Inserir</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
 
-  <!-- <div id="edit__modal">
+  <div id="edit__modal">
     <div id="edit__inner">
       <button id="edit__close">X</button>
       <form id="edit__form" action="#">
@@ -92,10 +98,10 @@
         <button id="edit__submitButton" type="submit">Salvar alterações</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
 
-  <!-- <div id="profileEdit__modal">
+  <div id="profileEdit__modal">
     <div id="profileEdit__inner">
       <button id="profileEdit__close">X</button>
       <form id="profileEdit__form" action="#">
@@ -107,26 +113,9 @@
         <button id="profileEdit__submitButton" type="submit">Salvar alterações</button>
       </form>
     </div>
-  </div> -->
+  </div>
 
-
-  <!-- <div id="removeHabit__modal">
-    <div id="removeHabit__inner">
-      <button id="removeHabit__close">X</button>
-      <form id="removeHabit__form" action="#">
-        <h2 id="removeHabit__title">Excluir hábito</h2>
-        <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
-        <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
-        <section id="removeHabit__buttons">
-          <button id="removeHabit__cancelButton" type="button">Cancelar</button>
-          <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
-        </section>
-      </form>
-    </div>
-  </div> -->
-
-
-  <!-- <header id="header">
+  <header id="header">
     <div id="header__menu">
       <h2 id="header__title">KenzieHabit</h2>
       <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
@@ -148,10 +137,25 @@
       </div>
     </div>
   </main>
-
   <footer id="footer">
     <button id="footer__button">Carregar mais</button>
-  </footer> -->
+  </footer>
+
+  <div id="removeHabit__modal">
+    <div id="removeHabit__inner">
+      <button id="removeHabit__close">X</button>
+      <form id="removeHabit__form" action="#">
+        <h2 id="removeHabit__title">Excluir hábito</h2>
+        <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
+        <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
+        <section id="removeHabit__buttons">
+          <button id="removeHabit__cancelButton" type="button">Cancelar</button>
+          <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
+        </section>
+      </form>
+    </div>
+
+    <script type="module" src="./src/scripts/index.js"></script>
 
 </body>
 
