@@ -1,4 +1,4 @@
-class Api {
+export class Api {
     static baseUrl = 'https://habits-kenzie.herokuapp.com/api';
     static headers = {
         'Content-Type': 'application/json',
@@ -6,14 +6,14 @@ class Api {
     }
     
     static async apiLogin(email, password) {
-        return await fetch(`${this.baseUrl}/login`, {
+        return await fetch(`${this.baseUrl}/userLogin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                email,
-                password
+                email: email,
+                password: password
             })
         }).then(res => res.json()).then(res => {
             localStorage.setItem("@CapStone-User", JSON.stringify(res.response))
