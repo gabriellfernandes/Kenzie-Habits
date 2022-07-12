@@ -1,4 +1,4 @@
-/* #login__modal {
+#login__modal {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -10,9 +10,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#login__container {
 }
 
 #login__inner {
@@ -151,11 +148,11 @@
 
 #login__submitButton:hover {
     background: #A0ADF9;
-} */
+}
 
 
 
-/* 
+
 #create__modal {
     width: 100vw;
     height: 100vh;
@@ -315,12 +312,11 @@
     height: 40px;
     margin-left: 14px;
     margin-bottom: 24px;
-} */
+}
 
 
 
 #edit__modal {
-    /* background-color:#FFFFFF ; */
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -482,19 +478,7 @@
     color: #343A40;
 }
 
-#edit__checkbox:checked {
-    /* content: "";
-    display: block;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 0; */
-    /* background-color: #33ef1e; */
-}
-
 input[type=checkbox] {
-    /* background-color: #33ef1e; */
     all: unset;
     border: 1px solid black;
     border: 1.4px solid #ADB5BD;
@@ -550,4 +534,434 @@ input:checked {
     cursor: pointer;
     background-color: #415AF3;
     border: 2px solid #415AF3;
+}
+
+#header {
+    background-color: #415AF3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#header__menu {
+    background: #FAFAFA;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header__title {
+    width: 131px;
+    height: 27px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #415AF3;
+    margin-right: 108px;
+}
+
+#header__logo {
+    width: 40px;
+    height: 40px;
+}
+
+#user {
+    background-color: #415AF3;
+    width: 321px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+
+#user__logo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    margin-right: 18px;
+    margin-left: 21px;
+    margin-bottom: 48px;
+}
+
+#user__name {
+    width: 190px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 66px;
+}
+
+#habits__main {
+    margin-top: 58px;
+}
+
+#habits__title {
+    width: 73px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-left: 13px;
+    margin-bottom: 34px;
+}
+
+#habits__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#habits__all {
+    width: 48px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #343A40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+}
+
+#habits__all:hover {
+    cursor: pointer;
+}
+
+#habits__concluded {
+    width: 86px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #343A40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+}
+
+#habits__create {
+    width: 90px;
+    height: 32px;
+    background: #415AF3;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#footer__button {
+    width: 152px;
+    height: 32px;
+    background: #415AF3;
+    border: 2px solid #415AF3;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+
+#profileEdit__modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profileEdit__inner {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 305px;
+    height: 466px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#profileEdit__close {
+    background: none;
+    border: none;
+    color: #ADB5BD;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 260px;
+    margin-top: 25px;
+}
+
+#profileEdit__title {
+    width: 150px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #212529;
+    /* margin-top: 0px; */
+    margin-left: 14px;
+    margin-bottom: 40px;
+}
+
+#profileEdit__user {
+    width: 38px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #343A40;
+    margin-left: 14px;
+    margin-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+#profileEdit__userInput {
+    gap: 10px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    width: 277px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 14px;
+    margin-bottom: 30px;
+}
+
+#profileEdit__userInput::placeholder {
+    color: #343A40;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#profileEdit__urlImage {
+    width: 163px;
+    height: 17px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #343A40;
+    margin-left: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#profileEdit__imageInput {
+    font-family: 'Inter';
+    color: #343A40;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    gap: 10px;
+    width: 277px;
+    height: 40px;
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    margin-left: 14px;
+    margin-bottom: 20px;
+}
+
+#profileEdit__imageInput::placeholder {
+    color: #343A40;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#profileEdit__submitButton {
+    background: #A0ADF9;
+    border: 2px solid #A0ADF9;
+    border-radius: 4px;
+    gap: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 170px;
+    height: 50px;
+    margin-left: 60px;
+    margin-bottom: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#profileEdit__submitButton:hover {
+    cursor: pointer;
+    background-color: #415AF3;
+    border: 2px solid #415AF3;
+}
+
+
+
+
+
+
+#removeHabit__modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#removeHabit__inner {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 305px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#removeHabit__close {
+    background: none;
+    border: none;
+    color: #ADB5BD;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 260px;
+    margin-top: 50px;
+}
+
+#removeHabit__close:hover {
+    cursor: pointer;
+}
+
+#removeHabit__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#removeHabit__title {
+    width: 132px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #212529;
+    margin-bottom: 50px;
+    margin-left: 32px;
+}
+
+#removeHabit__text {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-left: 32px;
+    margin-right: 36px;
+}
+
+#removeHabit__paragraph {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #343A40;
+    margin-bottom: -10px;
+}
+
+#removeHabit__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#removeHabit__cancelButton {
+    background: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #343A40;
+}
+
+#removeHabit__submitButton {
+    background: #E64445;
+    border: 2px solid #E64445;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#removeHabit__submitButton:hover {
+    cursor: pointer;
+}
+
+#removeHabit__cancelButton {
+    cursor: pointer;
 }
