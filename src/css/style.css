@@ -1,16 +1,78 @@
+#profile__modal {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    list-style: none;
+    position: absolute;
+    transition: all 125ms ease-in;
+    margin-left: 50px;
+    margin-top: 57px;
+    width: 246px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    display: none;
+}
+
+#header__logo:hover {
+    cursor: pointer;
+}
+
+#profile__editLogo {
+    margin-right: 28px;
+}
+
+#profile__edit {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background: none;
+    width: 230px;
+    height: 44px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#profile__edit:hover {
+    cursor: pointer;
+}
+
+
+#profile__logout {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    background: none;
+    width: 230px;
+    height: 44px;
+}
+
+#profile__logout:hover {
+    cursor: pointer;
+}
+
+#profile__logoutLogo {
+    margin-right: 28px;
+}
+
 #login__modal {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 1;
     background-color: rgba(255, 255, 255, 1.00);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: none;
+    transition: all 125ms ease-in;
 }
 
 #login__inner {
@@ -198,11 +260,8 @@
     width: 35%;
     min-width: 300px;
     height: 466px;
-    display: none;
 }
 
-
-/* Preciso concertar o Botão X */
 #create__close {
     background: none;
     border: none;
@@ -211,8 +270,12 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    margin-right: 50px;
-    margin-top: 0px;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+#create__close:hover {
+    cursor: pointer;
 }
 
 
@@ -655,18 +718,6 @@ input:checked:hover {
     margin-right: 40px;
 }
 
-#header__logout {
-    background-color: rgb(236, 103, 103);
-    color: white;
-    border: none;
-    border-radius: 2px;
-    margin-right: 10px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-}
-
 #header__logo {
     width: 40px;
     height: 40px;
@@ -846,6 +897,10 @@ input:checked:hover {
     font-size: 20px;
     margin-left: 260px;
     margin-top: 25px;
+}
+
+#profileEdit__close:hover {
+    cursor: pointer;
 }
 
 #profileEdit__title {
@@ -1097,7 +1152,7 @@ input:checked:hover {
     position: absolute;
     top: 10%;
     right: 47%;
-    z-index: 1;
+    z-index: 51;
     cursor: pointer;
 }
 
@@ -1229,6 +1284,7 @@ input:checked:hover {
 
 
 
+
 #modal__loginerror {
     display: none;
     background-color: #E64445;
@@ -1260,9 +1316,86 @@ input:checked:hover {
 #modal__loginerror:hover #modal__loginbutton {
     background-color: #e02b2b;
     color: white;
+
+#modal__loginerror {
+    width: 200px;
+    height: 80px;
+    margin-top: 200px;
+    margin-right: -90px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 @media(min-width: 850px) {
+
+    #table__habits {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+
+
+    #table__description {
+        display: block;
+        font-family: 'Inter';
+        font-style: normal;
+    }
+
+    #table__category {
+        display: block;
+        font-family: 'Inter';
+        font-style: normal;
+    }
+
+
+    #table__content {
+        width: 988px;
+        height: 49px;
+        border: 1.4px solid #E9ECEF;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #table__check {
+        margin-right: 0px;
+    }
+
+    #table__nameHabit {}
+
+
+
+    #table__descriptionHabit {
+        display: block;
+    }
+
+    #table__categoryHabit {
+        display: block;
+    }
+
+    #table__editButton {
+        border: none;
+        background: none;
+    }
+
+    #table__editButton:hover {
+        cursor: pointer;
+    }
+
+
+
+
+    #profile__modal {
+        margin-left: 500px;
+    }
 
     #login__inner {
         display: flex;
@@ -1341,8 +1474,8 @@ input:checked:hover {
     }
 
     #header__logo {
-        width: 100vw;
-        height: 1vh;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: space-around;
         margin: 20px 0;
@@ -1498,6 +1631,12 @@ input:checked:hover {
     }
 
 
-   
+    #profileEdit__modal {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 
 }

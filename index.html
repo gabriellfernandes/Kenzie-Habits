@@ -24,22 +24,8 @@
   <title>Kenzie Habit</title>
 </head>
 
-<body>
 
-
-  <header id="header">
-    <div id="header__menu">
-      <h2 id="header__title">KenzieHabit</h2>
-      <button id="header__logout">Logout</button>
-      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
-    </div>
-
-    <div id="user">
-      <img id="user__logo" src="./src/assets/img/Ellipse 2.png" alt="Imagem do usuario">
-      <h2 id="user__name">Júlia Silva Camargo</h2>
-    </div>
-  </header>
-
+<body id="body">
 
   <div id="login__modal">
     <div id="login__inner">
@@ -101,10 +87,10 @@
         <select name="categoria" id="edit__select" placeholder="selecione categoria">
           <option value="" disabled selected>Selecionar categoria</option>
           <option value="casa">Casa</option>
-          <option value="estudo">Estudo</option>
+          <option value="estudo">Estudos</option>
           <option value="lazer">Lazer</option>
           <option value="trabalho">Trabalho</option>
-          <option value="saude">Saúde</option>
+          <option value="saude">Saude</option>
         </select>
         <section id="edit__check">
           <p id="edit__status">Status</p><input type="checkbox" name="" id="edit__checkbox">
@@ -129,6 +115,8 @@
       </form>
     </div>
   </div>
+  
+
 
   <section id="container_table">
     <div id="header_table">
@@ -141,6 +129,43 @@
         <p>Todos</p>
         <p>Concluidos</p>
         <button id="criar">Criar</button>
+   </section>
+        
+  <header id="header">
+    <div id="header__menu">
+      <h2 id="header__title">KenzieHabit</h2>
+      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
+    </div>
+
+    <div id="profile__modal">
+      <div id="profile__inner">
+        <div id="profile__content">
+          <ul>
+            <li><button id="profile__edit"><img id="profile__editLogo" src="./src/assets/img/user.png" alt=""> Editar
+                Perfil</button></li>
+            <li><button id="profile__logout"><img id="profile__logoutLogo" src="./src/assets/img/user (1).png" alt="">
+                Sair do app</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="user">
+      <img id="user__logo" src="./src/assets/img/Ellipse 2.png" alt="Imagem do usuario">
+      <h2 id="user__name">Júlia Silva Camargo</h2>
+    </div>
+  </header>
+
+
+
+  <main id="habits__main">
+    <div id="habits__titleBox">
+      <h3 id="habits__title">Tarefas</h3>
+      <div id="habits__buttons">
+        <button id="habits__all">Todos</button>
+        <button id="habits__concluded">Concluidos</button>
+        <button id="habits__create">Criar</button>
+        
       </div>
 
     </div>
@@ -215,14 +240,20 @@
     </table> -->
 
   </main>
+
   <footer id="footer">
     <button id="footer__button">Carregar mais</button>
   </footer>
 
+
   <div id="removeHabit__modal">
+
     <div id="removeHabit__inner">
+
       <button id="removeHabit__close">X</button>
+
       <form id="removeHabit__form" action="#">
+
         <h2 id="removeHabit__title">Excluir hábito</h2>
         <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
         <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
@@ -230,11 +261,13 @@
           <button id="removeHabit__cancelButton" type="button">Cancelar</button>
           <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
         </section>
+
       </form>
+
+
     </div>
 
     <script type="module" src="./src/scripts/index.js"></script>
-
 
 </body>
 
