@@ -6,6 +6,8 @@ if(localStorage.getItem('@CapStone-Token') !== undefined){
     const modalLogin = document.getElementById('login__modal');
     modalLogin.style.display = 'flex';
 }
+import { Logout } from "./logout.js";
+
 
 loginFunction();
 
@@ -27,3 +29,5 @@ function check() {
 }
 
 
+const logoutButton = document.getElementById("header__logout")
+logoutButton.addEventListener("click", Logout.logoutButton)

@@ -44,13 +44,15 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 17px;
     text-align: center;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -59,7 +61,8 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 12px;
     text-align: center;
     color: #E9ECEF;
     display: flex;
@@ -649,12 +652,25 @@ input:checked:hover {
     font-weight: 700;
     font-size: 22px;
     color: #415AF3;
-    margin-right: 108px;
+    margin-right: 40px;
+}
+
+#header__logout {
+    background-color: rgb(236, 103, 103);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    margin-right: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 #header__logo {
     width: 40px;
     height: 40px;
+    margin-right: 10px;
 }
 
 #user {
