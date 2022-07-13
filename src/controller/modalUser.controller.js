@@ -1,9 +1,11 @@
 export class UserModal {
     static baseTable = document.querySelector("#table__habits");
     static divUser = document.querySelector("#user");
+    static cont = 0;
     static modalUser(user) {
-      
-        console.log(user)
+        const header__logo = document.querySelector("#header__logo");
+        header__logo.src = user.usr_image;
+
         const userIgm = document.createElement('img');
               userIgm.id = "user__logo"
               userIgm.src = user.usr_image;
@@ -20,8 +22,10 @@ export class UserModal {
        
 
         habit.forEach(element => {
+            console.log(element)
             const table__content = document.createElement('tr');
                 table__content.id = "table__content";
+                table__content.className = `table ${element.habit_id}`;
                 this.baseTable.appendChild(table__content);
 
             const table__check = document.createElement('td');
@@ -30,7 +34,14 @@ export class UserModal {
             const table__checkbox = document.createElement('input');
                 table__checkbox.type = "checkbox";
                 table__checkbox.id = "table__checkbox";
-                table__check.appendChild(table__checkbox);
+                if(element.habit_status == false){
+                    table__check.appendChild(table__checkbox);
+                }else{
+                    table__check.appendChild(table__checkbox);
+                    table__checkbox.checked = true;
+                }
+                
+                
 
             const table__nameHabit = document.createElement('td');
                 table__nameHabit.id = "table__nameHabit";
@@ -53,10 +64,15 @@ export class UserModal {
             
             const table__editButton = document.createElement('button');
                 table__editButton.id = "table__editButton";
+                table__editButton.className = `btn btn-${this.cont}`;
+                this.cont++;
+                
             
             const table__editImg = document.createElement('img');
                 table__editImg.src = "./src/assets/img/editarbutton.png";
                 table__editImg.id = "table__editImg";
+                table__editImg.className = `btn btn-${this.cont}`;
+                
                 table__editButton.appendChild(table__editImg);
                 table__editTd.appendChild(table__editButton);
 

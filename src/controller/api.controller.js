@@ -26,9 +26,7 @@ export class Api {
         return await fetch(`${this.baseUrl}/user/profile`, {
             method: 'PATCH',
             headers: this.headers,
-            body: JSON.stringify({
-                usr_image: igm
-            })
+            body: JSON.stringify(igm)
         }).then(res => res.json()).then(res => {
             localStorage.setItem("@CapStone-User", JSON.stringify(res))
             return res
@@ -68,7 +66,7 @@ export class Api {
     }
 
     static async apiUpdateHabit(id, title, description, category) {
-        return await fetch(`${this.baseUrl}/habit/${id}`, {
+        return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'PATCH',
             headers: this.headers,
             body: JSON.stringify({
@@ -82,13 +80,13 @@ export class Api {
     }
 
     static async apiCompleteHabit(id) {
-        return await fetch(`${this.baseUrl}/habit/complete${id}`, { 
+        return await fetch(`${this.baseUrl}/habits/complete/${id}`, { 
             method: 'PATCH',
             headers: this.headers}).then(res => res.json()).then(res => res).catch(err => console.log(err));
     }
 
     static async apiDeleteHabit(id) {
-        return await fetch(`${this.baseUrl}/habit/${id}`, {
+        return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'DELETE',
             headers: this.headers
         }).then(res => res.json()).then(res => {

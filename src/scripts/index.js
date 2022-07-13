@@ -6,6 +6,8 @@ import { Logout } from "./logout.js";
 import { creatHabit } from "./createhabit.scripts.js";
 import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
+import { editProfile } from "./editProfie.script.js";
+import { editHabit } from "./editHabit.script.js";
 
 
 if(localStorage.getItem('@CapStone-Token') != null){
@@ -19,6 +21,8 @@ if(localStorage.getItem('@CapStone-Token') != null){
 loginFunction();
 itemsTable();
 creatHabit();
+editProfile();
+editHabit();
 
 UserModal.modalUser(JSON.parse(localStorage.getItem('@CapStone-User')));
 
