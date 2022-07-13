@@ -28,7 +28,7 @@
 
   <div id="login__modal">
     <div id="login__inner">
-      <div id="login_call">
+      <div id="login__call">
         <h1 id="login__title">KenzieHabit</h1>
         <h2 id="login__subtitle">If you are going to use a passage of Lorem Ipsum</h2>
         <p id="login__paragraph">you need to be sure there isn't anything</p>
@@ -97,26 +97,49 @@
   </div>
 
   <header>
-    <div>
+    <div id="header__logo">
       <h2>KenzieHabit</h2>
       <img src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
     </div>
-    <div>
+    <div id="header__user">
       <img src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
       <h2>Julia Silva Cargo</h2>
     </div>
   </header>
+
   <main>
-    <div>
-      <h3>Tarefas</h3>
+    <div id="header__main">
+      <div>
+        <h3>Tarefas</h3>
+      </div>
       <div>
         <button>Todos</button>
         <button>Concluidos</button>
         <button>Criar</button>
       </div>
-    </div>
+      </div>
+      <section id="table__container">
+        
+        <table>
+          <tr>
+            <th>Status</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Editar</th>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Fazer exercicios segunda pela manha</td>
+            <td>Ir correr na  praça próximo de csa</td>
+            <td>Saude</td>
+            <td>...</td>
+          </tr>
+        </table>
 
-    
+      </section>
+
+
   </main>
   <footer>
     <button>Carregar mais</button>
