@@ -390,6 +390,16 @@ static createModalHabit(){
   
 
        
-  
+  static closeEdit(){
+      const profileEdit__modal = document.getElementById("profileEdit__modal")
+      profileEdit__modal.style.display = "none"
+  }
+
+  static closeCreate(){
+      const create__modal = document.getElementById("create__modal")
+      create__modal.style.display = "none"
+  }
+
+
   }
   
