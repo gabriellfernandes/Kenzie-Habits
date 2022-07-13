@@ -1,16 +1,45 @@
 export class UserModal {
     static modalUser(user) {
         const divUser = document.createElement('div');
-        divUser.id = 'user';
+              divUser.id = 'user';
 
         const userIgm = document.createElement('img');
-        userIgm.id = "header__logo"
-        userIgm.src = user.usr_image;
-        divUser.appendChild(userIgm);
+              userIgm.id = "header__logo"
+              userIgm.src = user.usr_image;
+              divUser.appendChild(userIgm);
 
         const user__name = document.createElement('h2');
-        user__name.id = "user__name";
-        user__name.innerHTML = user.usr_name;
-        divUser.appendChild(user__name);        
-    } 
+              user__name.id = "user__name";
+              user__name.innerHTML = user.usr_name;
+              divUser.appendChild(user__name);
+    }
+
+    static itemHabit(habit){
+        habit.forEach(element => {
+            const table__content = document.createElement('tr');
+                table__content.id = "table__content";
+
+            const table__check = document.createElement('td');
+                table__check.id = "table__check";
+                table__content.appendChild(table__check);
+            const table__checkbox = document.createElement('input');
+                table__checkbox.type = "checkbox";
+                table__checkbox = "table__checkbox";
+                table__check.appendChild(table__checkbox);
+
+            const table__nameHabit = document.createElement('td');
+                table__nameHabit.id = "table__nameHabit";
+                table__nameHabit.innerText = element.habit_title;
+                table__content.appendChild(table__nameHabit);
+
+            const table__descriptionHabit = document.createElement('td');
+                table__descriptionHabit.id = "table__descriptionHabit";
+                table__descriptionHabit.innerText = element.habit_description;
+                table__content.appendChild(table__descriptionHabit);
+
+            const table__categoryHabit = document.createElement('td');
+                table__categoryHabit.id = "table__categoryHabit";
+
+        })
+    }
 }
