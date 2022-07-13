@@ -28,6 +28,7 @@ export class UserModal {
             <h3 id="table__edit">Editar</h3>
             </section>
         </tr>`
+        
         habit.forEach(element => {
             const table__content = document.createElement('tr');
                 table__content.id = "table__content";
