@@ -1584,18 +1584,18 @@ input:checked:hover {
 
 
 
-    #tabela {
+    #table__habits {
         width: 60%;
         max-height: 300px;
     }
 
-    #tabela tr {
+    #table__habits tr {
         border: 1px solid rgba(161, 161, 161, 1);
         text-align: justify;
     }
 
 
-    #tabela th {
+    #table__habits th {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -1606,7 +1606,7 @@ input:checked:hover {
     }
 
 
-    #tabela td {
+    #table__habits td {
         padding: 10px;
         width: auto;
         text-align: justify;
@@ -1627,7 +1627,7 @@ input:checked:hover {
     }
 
 
-    #tabela tr:hover{
+    #table__habits tr:hover{
         background: #F1F3F5;
     }
 
