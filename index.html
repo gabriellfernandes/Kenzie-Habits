@@ -24,6 +24,7 @@
   <title>Kenzie Habit</title>
 </head>
 
+
 <body id="body">
 
   <div id="login__modal">
@@ -116,6 +117,20 @@
   </div>
   
 
+
+  <section id="container_table">
+    <div id="header_table">
+
+      <div>
+        <h2>Tarefas</h2>
+      </div>
+
+      <div id="buttons">
+        <p>Todos</p>
+        <p>Concluidos</p>
+        <button id="criar">Criar</button>
+   </section>
+        
   <header id="header">
     <div id="header__menu">
       <h2 id="header__title">KenzieHabit</h2>
@@ -150,9 +165,37 @@
         <button id="habits__all">Todos</button>
         <button id="habits__concluded">Concluidos</button>
         <button id="habits__create">Criar</button>
+        
       </div>
+
     </div>
+
+    <table id="tabela">
+      <tr>
+        <th>Status</th>
+        <th>Título</th>
+        <th>Descrição</th>
+        <th>Categoria</th>
+        <th>Editar</th>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>Fazer exercícios segunda pela manhã</td>
+        <td>Ir correr na  praça próximo de csa</td>
+        <td id="td_description">Saúde</td>
+        <td>°°°</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- <main id="habits__main">
+
+
     <table id="table__habits">
+
       <tr id="table__header">
         <section id="table__section">
           <h3 id="table__status">Status</h3>
@@ -162,6 +205,7 @@
           <h3 id="table__edit">Editar</h3>
         </section>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit"><label for="table__checkbox">Fazer exercícios segunda pela manhã</label> </td>
@@ -169,6 +213,7 @@
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
@@ -176,6 +221,7 @@
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
@@ -191,7 +237,7 @@
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
-    </table>
+    </table> -->
 
   </main>
 
