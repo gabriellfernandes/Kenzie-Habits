@@ -1,7 +1,17 @@
 import { loginFunction } from "./loginFunction.scripts.js";
 import { UserModal } from "../controller/modalUser.controller.js";
 import { Modais } from "../controller/Modals.controller.js";
+console.log(localStorage.getItem('@CapStone-Token'))
+if(localStorage.getItem('@CapStone-Token') != null){
+    const modalLogin = document.getElementById('login__modal');
+    modalLogin.style.display = 'none';
+}else{
+    const modalLogin = document.getElementById('login__modal');
+    modalLogin.style.display = 'flex';
+}
+
 import { Logout } from "./logout.js";
+
 
 loginFunction();
 
