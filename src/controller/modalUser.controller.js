@@ -39,7 +39,21 @@ export class UserModal {
 
             const table__categoryHabit = document.createElement('td');
                 table__categoryHabit.id = "table__categoryHabit";
+                table__categoryHabit.innerText = element.habit_category;
+                table__content.appendChild(table__categoryHabit);
 
+            const table__editTd = document.createElement('td');
+                table__editTd.id = "table__editTd";
+                table__content.appendChild(table__editTd);
+            
+            const table__editButton = document.createElement('button');
+                table__editButton.id = "table__editButton";
+            
+            const table__editImg = document.createElement('img');
+                table__editImg.src = "../../assets/img/editbutton.png";
+                table__editImg.id = "table__editImg";
+                table__editButton.appendChild(table__editImg);
+                table__editTd.appendChild(table__editButton);
         })
     }
 }

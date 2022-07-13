@@ -1,6 +1,12 @@
 import { loginFunction } from "./loginFunction.scripts.js";
 import { UserModal } from "../controller/modalUser.controller.js";
 import { Modais } from "../controller/Modals.controller.js";
+
+if(localStorage.getItem('@CapStone-Token') !== undefined){
+    const modalLogin = document.getElementById('login__modal');
+    modalLogin.style.display = 'flex';
+}
+
 loginFunction();
 
 
