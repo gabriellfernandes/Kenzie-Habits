@@ -66,7 +66,7 @@ export class Api {
     }
 
     static async apiUpdateHabit(id, title, description, category) {
-        return await fetch(`${this.baseUrl}/habit/${id}`, {
+        return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'PATCH',
             headers: this.headers,
             body: JSON.stringify({
@@ -80,7 +80,7 @@ export class Api {
     }
 
     static async apiCompleteHabit(id) {
-        return await fetch(`${this.baseUrl}/habit/complete${id}`, { 
+        return await fetch(`${this.baseUrl}/habits/complete/${id}`, { 
             method: 'PATCH',
             headers: this.headers}).then(res => res.json()).then(res => res).catch(err => console.log(err));
     }
