@@ -40,6 +40,7 @@
     cursor: pointer;
 }
 
+
 #profile__logout {
     font-family: 'Inter';
     font-style: normal;
@@ -1573,7 +1574,7 @@ input:checked:hover {
     }
 
     #profileEdit__modal {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         text-align: center;

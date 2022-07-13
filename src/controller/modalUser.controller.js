@@ -18,17 +18,8 @@ export class UserModal {
 
     static itemHabit(habit){
         this.baseTable.innerHTML = '';
-        this.baseTable.innerHTML = `
-        <tr id="table__header">
-            <section id="table__section">
-            <h3 id="table__status">Status</h3>
-            <h3 id="table__title">Titulo</h3>
-            <h3 id="table__description">Descrição</h3>
-            <h3 id="table__category">Categoria</h3>
-            <h3 id="table__edit">Editar</h3>
-            </section>
-        </tr>`
-        
+       
+
         habit.forEach(element => {
             const table__content = document.createElement('tr');
                 table__content.id = "table__content";
@@ -39,7 +30,7 @@ export class UserModal {
                 table__content.appendChild(table__check);
             const table__checkbox = document.createElement('input');
                 table__checkbox.type = "checkbox";
-                table__checkbox = "table__checkbox";
+                table__checkbox.id = "table__checkbox";
                 table__check.appendChild(table__checkbox);
 
             const table__nameHabit = document.createElement('td');
@@ -65,7 +56,7 @@ export class UserModal {
                 table__editButton.id = "table__editButton";
             
             const table__editImg = document.createElement('img');
-                table__editImg.src = "../../assets/img/editbutton.png";
+                table__editImg.src = "./src/assets/img/editarbutton.png";
                 table__editImg.id = "table__editImg";
                 table__editButton.appendChild(table__editImg);
                 table__editTd.appendChild(table__editButton);
