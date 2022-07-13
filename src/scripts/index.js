@@ -1,14 +1,17 @@
 import { loginFunction } from "./loginFunction.scripts.js";
 import { UserModal } from "../controller/modalUser.controller.js";
 import { Modais } from "../controller/Modals.controller.js";
+import { itemsTable } from "./itemtable.script.js";
+import { creatHabit } from "./createhabit.scripts.js";
 import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
 import { Quit } from "./logout.js";
-// import { creatHabit } from "./createhabit.scripts.js";
-// import { itemsTable } from "./itemtable.script.js";
+// // import { creatHabit } from "./createhabit.scripts.js";
+// // import { itemsTable } from "./itemtable.script.js";
 
-console.log(localStorage.getItem('@CapStone-Token'))
-if(localStorage.getItem('@CapStone-Token') != null){
+// console.log(localStorage.getItem('@CapStone-Token'))
+
+if (localStorage.getItem('@CapStone-Token') != null) {
     const modalLogin = document.getElementById('login__modal');
     modalLogin.style.display = 'none';
 } else {
@@ -55,3 +58,4 @@ loginFunction();
 
 // const logoutButton = document.getElementById("header__logout")
 // logoutButton.addEventListener("click", Quit.logoutButton)
+

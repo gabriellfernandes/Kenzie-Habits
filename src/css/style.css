@@ -40,6 +40,7 @@
     cursor: pointer;
 }
 
+
 #profile__logout {
     font-family: 'Inter';
     font-style: normal;
@@ -1289,6 +1290,42 @@ input:checked:hover {
     cursor: pointer;
 }
 
+
+
+
+#modal__loginerror {
+    display: none;
+    background-color: #E64445;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 10%;
+    right: 47%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#modal__loginerror:hover {
+    background-color: #e02b2b;
+}
+
+#modal__loginbutton {
+    background-color: #E64445;
+    margin-left: 10px;
+    color: #212529;
+    font-weight: bold;
+    border: none;
+}
+
+#modal__loginerror:hover #modal__loginbutton {
+    background-color: #e02b2b;
+    color: white;
+}
+
 #modal__loginerror {
     width: 200px;
     height: 80px;
@@ -1501,85 +1538,108 @@ input:checked:hover {
     }
 
 
-
-    #table__container {
-        width: 100vw;
-        height: 40vh;
+    #container_table {
         display: flex;
         justify-content: center;
-        padding: 10px;
+        flex-wrap: wrap;
+        max-height: 1000px;
+
     }
 
-
-
-    /* #table__container table {
-        padding: 10px;
+    #header_table {
         width: 60%;
-        margin: 10px;
-        border: 1px solid rgba(161, 161, 161, 1);
-    } */
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header_table h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #343A40;
+    }
 
 
+    #buttons {
+        display: flex;
+    }
 
-    #table__container table th {
-        height: 10px;
-        color: rgba(161, 161, 161, 1);
+    #buttons p {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        text-align: justify;
-        padding: 5px;
-        border-bottom: 1px solid rgba(161, 161, 161, 1);
-    }
-
-    #table__container table td {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 32px;
-        border-bottom: 1px solid rgba(161, 161, 161, 1);
-        padding: 5px;
-    }
-
-
-    #modal__loginerror {
-        display: none;
-        background-color: #E64445;
-        border-radius: 12px;
-        text-align: center;
-        padding: 10px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: white;
-        position: absolute;
-        top: 10%;
-        right: 47%;
-        z-index: 1;
-        cursor: pointer;
-    }
-
-    #modal__loginerror:hover {
-        background-color: #e02b2b;
-    }
-
-    #modal__loginbutton {
-        background-color: #E64445;
-        margin-left: 10px;
-        color: #212529;
-        font-weight: bold;
+        color: #343A40;
         border: none;
+        padding: 0 10px;
     }
 
-    #modal__loginerror:hover #modal__loginbutton {
-        background-color: #e02b2b;
+
+    #criar {
+        background: #415AF3;
+        border: 2px solid #415AF3;;
+        border-radius: 4px;
         color: white;
+        width: 70px;
     }
+
+
+
+    #table__habits {
+        width: 60%;
+        max-height: 300px;
+    }
+
+    #table__habits tr {
+        border: 1px solid rgba(161, 161, 161, 1);
+        text-align: justify;
+    }
+
+
+    #table__habits th {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        color: #A1A1A1;
+        padding: 5px;
+    }
+
+
+    #table__habits td {
+        padding: 10px;
+        width: auto;
+        text-align: justify;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #td_description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #415AF3;
+    }
+
+
+    #table__habits tr:hover{
+        background: #F1F3F5;
+    }
+
 
     #profileEdit__modal {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         text-align: center;
