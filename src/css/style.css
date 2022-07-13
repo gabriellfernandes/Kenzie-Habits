@@ -52,7 +52,8 @@
     height: 44px;
 }
 
-#profile__logout:hover {
+#profile__logout:hover,
+#profile__logout:focus {
     cursor: pointer;
 }
 
@@ -73,6 +74,7 @@
     justify-content: center;
     flex-direction: column;
     transition: all 125ms ease-in;
+
 }
 
 #login__inner {
@@ -229,12 +231,14 @@
     width: 150px;
     height: 50px;
     font-size: 20px;
+    transition: background 1s;
 }
 
 
 
 #login__submitButton:hover {
     background: #A0ADF9;
+    cursor: pointer;
 }
 
 #create__modal {
@@ -264,6 +268,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
+
 }
 
 #create__close {
@@ -276,9 +282,10 @@
     font-size: 20px;
     display: flex;
     margin-top: 10px;
-    margin-left: 280px;
     display: flex;
     align-items: flex-end;
+    margin-left: 270px;
+    position: static;
 }
 
 #create__close:hover {
@@ -638,10 +645,10 @@ input[type=checkbox]:hover {
 
 input:checked {
     background-color: #56CF8E;
-    width: 10px;
-    height: 10px;
     border: 2px solid #56CF8E;
     background-image: url(/src/assets/img/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
@@ -760,6 +767,8 @@ input:checked:hover {
     margin-bottom: 40px;
 }
 
+
+
 #habits__main {
     margin-top: 58px;
     display: flex;
@@ -841,17 +850,20 @@ input:checked:hover {
     font-size: 14px;
     color: #FFFFFF;
     margin-right: 16px;
+    transition: background 1s;
 }
 
 #habits__create:hover {
     cursor: pointer;
+    background-color: #A0ADF9;
+    border: #A0ADF9;
 }
 
 #footer {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 70px;
+    justify-content: flex-end;
+    margin-top: 50px;
 }
 
 #footer__button {
@@ -1244,7 +1256,7 @@ input:checked:hover {
 
 
 #table__content {
-    width: 321px;
+    width: 100vw;
     height: 49px;
     border: 1.4px solid #E9ECEF;
     display: flex;
@@ -1291,8 +1303,6 @@ input:checked:hover {
 }
 
 
-
-
 #modal__loginerror {
     display: none;
     background-color: #E64445;
@@ -1337,7 +1347,19 @@ input:checked:hover {
     font-size: 20px;
 }
 
+
 @media(min-width: 850px) {
+
+
+    #create__inner {
+        width: 502px;
+        height: 482px;
+    }
+
+    #create__close {
+        margin-left: 450px;
+    }
+
 
     #table__habits {
         width: 500px;
@@ -1361,9 +1383,9 @@ input:checked:hover {
 
 
     #table__content {
-        width: 988px;
+        width: 100vw;
         height: 49px;
-        border: 1.4px solid #E9ECEF;
+        border-bottom: 1.4px solid #E9ECEF;
         display: block;
         align-items: center;
         justify-content: center;
@@ -1376,21 +1398,23 @@ input:checked:hover {
         margin-right: 0px;
     }
 
-    #table__nameHabit {}
-
-
-
-    #table__descriptionHabit {
-        display: block;
-    }
-
     #table__categoryHabit {
         display: block;
+        text-align: center;
+        width: 67px;
+        height: 24px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: -100px;
     }
 
     #table__editButton {
         border: none;
         background: none;
+        margin-right: 90px;
+        margin-left: 130px;
     }
 
     #table__editButton:hover {
@@ -1582,7 +1606,7 @@ input:checked:hover {
 
     #criar {
         background: #415AF3;
-        border: 2px solid #415AF3;;
+        border: 2px solid #415AF3;
         border-radius: 4px;
         color: white;
         width: 70px;
@@ -1595,27 +1619,10 @@ input:checked:hover {
         max-height: 300px;
     }
 
-    #table__habits tr {
-        border: 1px solid rgba(161, 161, 161, 1);
-        text-align: justify;
-    }
-
-
-    #table__habits th {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 32px;
-        color: #A1A1A1;
-        padding: 5px;
-    }
-
-
-    #table__habits td {
-        padding: 10px;
-        width: auto;
-        text-align: justify;
+    #table__checkbox {
+        width: 17px;
+        height: 15px;
+        margin-left: 31.44px;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -1632,8 +1639,38 @@ input:checked:hover {
         color: #415AF3;
     }
 
+    #table__nameHabit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0px;
+        margin-left: 100px;
+        width: 287px;
+        height: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #343A40;
+        overflow: hidden;
+    }
 
-    #table__habits tr:hover{
+    #table__descriptionHabit {
+        display: block;
+        width: 256px;
+        height: 20px;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #343A40;
+        margin-right: 140px;
+        margin-left: 40px;
+    }
+
+    #table__habits tr:hover {
         background: #F1F3F5;
     }
 
@@ -1644,5 +1681,15 @@ input:checked:hover {
         align-items: center;
         text-align: center;
         display: none;
+    }
+
+    #footer {
+        margin-top: 500px;
+    }
+
+    #habits__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
     }
 }
