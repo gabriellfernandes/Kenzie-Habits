@@ -50,7 +50,7 @@ export class Api {
     }
 
     static async apiGetHabits() {
-        return await fetch(`${this.baseUrl}/habit`, {
+        return await fetch(`${this.baseUrl}/habits`, {
             method: 'GET',
             headers: this.headers
         }).then(res => res.json()).then(res => {
