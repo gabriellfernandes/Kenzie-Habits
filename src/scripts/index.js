@@ -1,7 +1,9 @@
 import { loginFunction } from "./loginFunction.scripts.js";
 import { UserModal } from "../controller/modalUser.controller.js";
 import { Modais } from "../controller/Modals.controller.js";
-console.log(localStorage.getItem('@CapStone-Token'))
+import { itemsTable } from "./itemtable.script.js";
+import { Logout } from "./logout.js";
+
 if(localStorage.getItem('@CapStone-Token') != null){
     const modalLogin = document.getElementById('login__modal');
     modalLogin.style.display = 'none';
@@ -9,16 +11,10 @@ if(localStorage.getItem('@CapStone-Token') != null){
     const modalLogin = document.getElementById('login__modal');
     modalLogin.style.display = 'flex';
 }
-
-import { Logout } from "./logout.js";
-
-
 loginFunction();
-
-
+itemsTable();
 const checkbox = document.querySelector("#table__checkbox")
 checkbox.addEventListener("click", check)
-
 function check() {
     if (checkbox.checked == true) {
         const table__content = document.getElementById("table__content")
@@ -31,7 +27,6 @@ function check() {
         table__content.style.textDecoration = "none"
     }
 }
-
 
 const logoutButton = document.getElementById("header__logout")
 logoutButton.addEventListener("click", Logout.logoutButton)
