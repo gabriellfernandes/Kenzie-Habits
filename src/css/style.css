@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    display: none;
 }
 
 #login__inner {
@@ -1306,8 +1305,8 @@ input:checked:hover {
     }
 
     #header__logo {
-        width: 100vw;
-        height: 1vh;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: space-around;
         margin: 20px 0;
@@ -1405,7 +1404,7 @@ input:checked:hover {
         border-bottom: 1px solid rgba(161, 161, 161, 1);
         padding: 5px;
     }
-    
+
 
     #modal__loginerror {
         display: none;
