@@ -86,7 +86,7 @@ export class Api {
     }
 
     static async apiDeleteHabit(id) {
-        return await fetch(`${this.baseUrl}/habit/${id}`, {
+        return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'DELETE',
             headers: this.headers
         }).then(res => res.json()).then(res => {

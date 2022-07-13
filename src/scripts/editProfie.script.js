@@ -24,6 +24,7 @@ export function editProfile(){
             console.log(res)
             if(res.message == undefined){
                 profileEdit__modal.style.display = "none";
+                UserModal.modalUser();
             }else{
                 const modalError = document.getElementById('modal__loginerror');
                 modalError.innerText = res.message;

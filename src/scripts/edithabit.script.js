@@ -14,7 +14,20 @@ export function editHabit(){
                     edit__close.addEventListener("click", () => {
                         edit__modal.style.display = "none";
                     })
+                    const table = document.getElementsByClassName("table")[element.className.replace(/[^0-9]/g,'')];
+                    const habit_id = table.className.replace(/[^0-9]/g,'');
 
+                    const edit__delete = document.querySelector("#edit__delete");
+                    edit__delete.addEventListener("click", () => {
+                        Api.apiDeleteHabit(habit_id).then(habit => {
+                            if(habit.message != undefined){
+                                edit__modal.style.display = "none";
+                                Api.apiGetHabits().then(habits => {UserModal.itemHabit(habits)})
+                            }else{
+                                alert(habit.message)
+                            }
+                        })
+                    })
 
                     const edit__form = document.querySelector("#edit__form");
                     edit__form.addEventListener("submit", event => {
