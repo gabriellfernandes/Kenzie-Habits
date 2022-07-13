@@ -1,5 +1,5 @@
 const checkbox = document.querySelector("#table__checkbox")
-class Checkbox {
+export class Checkbox {
     static check() {
         if (checkbox.checked == true) {
             const table__content = document.getElementById("table__content")
@@ -14,4 +14,3 @@ class Checkbox {
     }
 }
 
-export {Checkbox}

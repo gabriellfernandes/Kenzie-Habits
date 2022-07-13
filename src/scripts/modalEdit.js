@@ -1,6 +1,6 @@
 const profile__modal = document.getElementById("profile__modal")
 
-class MenuDropdown {
+export class MenuDropdown {
     static menu() {
         if (profile__modal.style.display != "block") {
             profile__modal.style.display = "block"
@@ -15,4 +15,3 @@ class MenuDropdown {
     }
 }
 
-export { MenuDropdown }
