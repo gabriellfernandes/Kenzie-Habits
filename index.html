@@ -24,7 +24,22 @@
   <title>Kenzie Habit</title>
 </head>
 
-<body id>
+<body>
+
+
+  <header id="header">
+    <div id="header__menu">
+      <h2 id="header__title">KenzieHabit</h2>
+      <button id="header__logout">Logout</button>
+      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
+    </div>
+
+    <div id="user">
+      <img id="user__logo" src="./src/assets/img/Ellipse 2.png" alt="Imagem do usuario">
+      <h2 id="user__name">Júlia Silva Camargo</h2>
+    </div>
+  </header>
+
 
   <div id="login__modal">
     <div id="login__inner">
@@ -115,29 +130,11 @@
     </div>
   </div>
 
-  <header id="header">
-    <div id="header__menu">
-      <h2 id="header__title">KenzieHabit</h2>
-      <button id="header__logout">Logout</button>
-      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
-    </div>
-
-    <div id="user">
-      <img id="user__logo" src="./src/assets/img/Ellipse 2.png" alt="Imagem do usuario">
-      <h2 id="user__name">Júlia Silva Camargo</h2>
-    </div>
-  </header>
-
   <main id="habits__main">
-    <div id="habits__titleBox">
-      <h3 id="habits__title">Tarefas</h3>
-      <div id="habits__buttons">
-        <button id="habits__all">Todos</button>
-        <button id="habits__concluded">Concluidos</button>
-        <button id="habits__create">Criar</button>
-      </div>
-    </div>
+
+
     <table id="table__habits">
+
       <tr id="table__header">
         <section id="table__section">
           <h3 id="table__status">Status</h3>
@@ -147,6 +144,7 @@
           <h3 id="table__edit">Editar</h3>
         </section>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit"><label for="table__checkbox">Fazer exercícios segunda pela manhã</label> </td>
@@ -154,6 +152,7 @@
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
@@ -161,6 +160,7 @@
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
+
       <tr id="table__content">
         <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
         <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
