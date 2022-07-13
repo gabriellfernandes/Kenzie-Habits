@@ -1316,6 +1316,7 @@ input:checked:hover {
 #modal__loginerror:hover #modal__loginbutton {
     background-color: #e02b2b;
     color: white;
+}
 
 #modal__loginerror {
     width: 200px;
