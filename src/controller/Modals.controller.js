@@ -377,10 +377,23 @@ static createModalEditProfile(){
       profileEdit__form.append(profileEdit__title, profileEdit__user, profileEdit__userInput, profileEdit__urlImage, profileEdit__imageInput, profileEdit__imageInput)
         
     }
-   
+    
+    static closeEdit(){
+        const profileEdit__modal = document.getElementById("profileEdit__modal")
+        profileEdit__modal.style.display = "none"
+    }
+
+    static closeCreate(){
+        const create__modal = document.getElementById("create__modal")
+        create__modal.style.display = "none"
+    }
+
+
+    }
 }  
   
   
 
-       
  
+  
+
