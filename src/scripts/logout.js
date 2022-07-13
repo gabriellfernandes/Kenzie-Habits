@@ -1,8 +1,8 @@
-class Logout {
+class Quit {
     static logoutButton() {
         localStorage.clear()
         window.location.reload()
     }
 }
 
-export { Logout }
+export { Quit }

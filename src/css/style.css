@@ -259,6 +259,10 @@
     width: 35%;
     min-width: 300px;
     height: 466px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #create__close {
@@ -269,8 +273,11 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    margin-left: 400px;
+    display: flex;
     margin-top: 10px;
+    margin-left: 280px;
+    display: flex;
+    align-items: flex-end;
 }
 
 #create__close:hover {
@@ -884,6 +891,7 @@ input:checked:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* display: none; */
 }
 
 #profileEdit__close {
@@ -1302,8 +1310,6 @@ input:checked:hover {
     }
 
 
-
-
     #table__description {
         display: block;
         font-family: 'Inter';
@@ -1506,12 +1512,12 @@ input:checked:hover {
 
 
 
-    #table__container table {
+    /* #table__container table {
         padding: 10px;
         width: 60%;
         margin: 10px;
         border: 1px solid rgba(161, 161, 161, 1);
-    }
+    } */
 
 
 
@@ -1577,6 +1583,6 @@ input:checked:hover {
         justify-content: center;
         align-items: center;
         text-align: center;
+        display: none;
     }
-
 }
