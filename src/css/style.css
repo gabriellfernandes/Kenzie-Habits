@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    
+    display: none;
 }
 
 #login__inner {
@@ -549,22 +552,30 @@
 input[type=checkbox] {
     background-color: #33ef1e;
     all: unset;
-    border: 1px solid black;
     border: 1.4px solid #ADB5BD;
+    border-radius: 2px;
     border-radius: 2px;
     width: 10px;
     height: 10px;
     display: inline-block;
 }
 
+input[type=checkbox]:hover {
+    cursor: pointer;
+}
 
 
 input:checked {
     background-color: #56CF8E;
-    border: none;
     width: 10px;
     height: 10px;
+    border: 2px solid #56CF8E;
     background-image: url(/src/assets/img/check.png);
+}
+
+
+input:checked:hover {
+    cursor: pointer;
 }
 
 
@@ -651,7 +662,7 @@ input:checked {
 #user {
     background-color: #415AF3;
     width: 321px;
-    height: 160px;
+    height: 125px;
     display: flex;
     align-items: center;
 }
@@ -659,11 +670,11 @@ input:checked {
 #user__logo {
     width: 60px;
     height: 60px;
-    border: 2px solid #FFFFFF;
+    background-color: white;
     border-radius: 100px;
     margin-right: 18px;
     margin-left: 21px;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 #user__name {
@@ -674,11 +685,15 @@ input:checked {
     font-weight: 600;
     font-size: 20px;
     color: #FFFFFF;
-    margin-bottom: 66px;
+    margin-bottom: 40px;
 }
 
 #habits__main {
     margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #habits__title {
@@ -713,6 +728,8 @@ input:checked {
     justify-content: center;
     border: none;
     background: none;
+    margin-left: 15px;
+    margin-right: 34px;
 }
 
 #habits__all:hover {
@@ -732,6 +749,12 @@ input:checked {
     justify-content: center;
     border: none;
     background: none;
+    margin-right: 50px;
+
+}
+
+#habits__concluded:hover {
+    cursor: pointer;
 }
 
 #habits__create {
@@ -745,6 +768,11 @@ input:checked {
     font-weight: 600;
     font-size: 14px;
     color: #FFFFFF;
+    margin-right: 16px;
+}
+
+#habits__create:hover {
+    cursor: pointer;
 }
 
 #footer {
@@ -1074,6 +1102,115 @@ input:checked {
 #modal__loginerror:hover #modal__loginbutton {
     background-color: #e02b2b;
     color: white;
+}
+
+
+#table__habits {
+    margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 500px;
+}
+
+
+#table__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 34px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+#table__status {
+    width: 50px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #A1A1A1;
+    margin-right: 27px;
+    margin-left: 5px;
+}
+
+#table__title {
+    width: 44px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #A1A1A1;
+    margin-right: 120px;
+}
+
+#table__description {
+    display: none;
+}
+
+#table__category {
+    display: none;
+}
+
+#table__edit {
+    width: 45px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #A1A1A1;
+    margin-right: 22.5px;
+}
+
+
+#table__content {
+    width: 321px;
+    height: 49px;
+    border: 1.4px solid #E9ECEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#table__check {
+    margin-right: 20px;
+}
+
+#table__nameHabit {
+    width: 140px;
+    height: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #343A40;
+    margin-left: 31px;
+    overflow: hidden;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#table__descriptionHabit {
+    display: none;
+}
+
+#table__categoryHabit {
+    display: none;
+}
+
+#table__editButton {
+    border: none;
+    background: none;
+}
+
+#table__editButton:hover {
+    cursor: pointer;
 }
 
 @media(min-width: 850px) {
