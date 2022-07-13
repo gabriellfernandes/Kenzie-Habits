@@ -3,6 +3,7 @@ import { UserModal } from "../controller/modalUser.controller.js";
 import { Modais } from "../controller/Modals.controller.js";
 import { itemsTable } from "./itemtable.script.js";
 import { Logout } from "./logout.js";
+import { creatHabit } from "./createhabit.scripts.js";
 
 if(localStorage.getItem('@CapStone-Token') != null){
     const modalLogin = document.getElementById('login__modal');
@@ -13,6 +14,8 @@ if(localStorage.getItem('@CapStone-Token') != null){
 }
 loginFunction();
 itemsTable();
+creatHabit();
+
 const checkbox = document.querySelector("#table__checkbox")
 checkbox.addEventListener("click", check)
 function check() {

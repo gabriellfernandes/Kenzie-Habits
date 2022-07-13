@@ -375,12 +375,12 @@ static createModalHabit(){
         create__inner.append(create__close, create__form);
 
         create__form.append(create__title, create__habitInput, create__description, create__descriptionInput, create__category, create__submitButton)
-         
+      }
 
 
 
 
-}
+
 
 
 

@@ -1,4 +1,6 @@
 export class UserModal {
+    static baseTable = document.querySelector("#table__habits");
+
     static modalUser(user) {
         const divUser = document.createElement('div');
               divUser.id = 'user';
@@ -15,9 +17,21 @@ export class UserModal {
     }
 
     static itemHabit(habit){
+        this.baseTable.innerHTML = '';
+        this.baseTable.innerHTML = `
+        <tr id="table__header">
+            <section id="table__section">
+            <h3 id="table__status">Status</h3>
+            <h3 id="table__title">Titulo</h3>
+            <h3 id="table__description">Descrição</h3>
+            <h3 id="table__category">Categoria</h3>
+            <h3 id="table__edit">Editar</h3>
+            </section>
+        </tr>`
         habit.forEach(element => {
             const table__content = document.createElement('tr');
                 table__content.id = "table__content";
+                this.baseTable.appendChild(table__content);
 
             const table__check = document.createElement('td');
                 table__check.id = "table__check";
@@ -54,6 +68,7 @@ export class UserModal {
                 table__editImg.id = "table__editImg";
                 table__editButton.appendChild(table__editImg);
                 table__editTd.appendChild(table__editButton);
+
         })
     }
 }
