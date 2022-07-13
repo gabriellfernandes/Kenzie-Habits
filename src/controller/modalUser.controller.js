@@ -1,19 +1,18 @@
 export class UserModal {
     static baseTable = document.querySelector("#table__habits");
-
+    static divUser = document.querySelector("#user");
     static modalUser(user) {
-        const divUser = document.createElement('div');
-              divUser.id = 'user';
-
+      
+        console.log(user)
         const userIgm = document.createElement('img');
-              userIgm.id = "header__logo"
+              userIgm.id = "user__logo"
               userIgm.src = user.usr_image;
-              divUser.appendChild(userIgm);
+              this.divUser.appendChild(userIgm);
 
         const user__name = document.createElement('h2');
               user__name.id = "user__name";
               user__name.innerHTML = user.usr_name;
-              divUser.appendChild(user__name);
+              this.divUser.appendChild(user__name);
     }
 
     static itemHabit(habit){

@@ -1,4 +1,5 @@
 import { Api } from "../controller/api.controller.js";
+import { UserModal } from "../controller/modalUser.controller.js";
 
 export function loginFunction() {
     const formLogin = document.getElementById('login__form');
@@ -11,7 +12,7 @@ export function loginFunction() {
         Api.apiLogin(email, password).then(res => {
             if (res.token !== undefined) {
                 modalLogin.style.display = 'none';
-                console.log("Login Successful");
+                UserModal.modalUser(JSON.parse(localStorage.getItem('@CapStone-User')));
             } else {
                 modalError.innerText = res.message;
                 modalError.style.display = 'flex';
