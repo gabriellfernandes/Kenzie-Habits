@@ -5,7 +5,8 @@ import { itemsTable } from "./itemtable.script.js";
 import { creatHabit } from "./createhabit.scripts.js";
 import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
-import { Logout } from "./logout.js";
+import { editProfile } from "./editProfie.script.js";
+import { editHabit } from "./editHabit.script.js";
 
 console.log(localStorage.getItem('@CapStone-Token'))
 
@@ -18,6 +19,10 @@ if (localStorage.getItem('@CapStone-Token') != null) {
 }
 
 loginFunction();
+itemsTable();
+creatHabit();
+editProfile();
+editHabit();
 
 const checkbox = document.getElementById("table__checkbox")
 checkbox.addEventListener("click", Checkbox.check)
