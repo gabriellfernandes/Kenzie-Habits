@@ -24,7 +24,7 @@
   <title>Kenzie Habit</title>
 </head>
 
-<body>
+<body id>
 
   <div id="login__modal">
     <div id="login__inner">
@@ -44,6 +44,10 @@
     </div>
   </div>
 
+  <div id="modal__loginerror">
+    <p>Error</p>
+    <button id="modal__loginbutton">X</button>
+  </div>
 
   <div id="create__modal">
     <div id="create__inner">
@@ -140,10 +144,105 @@
       </section>
 
 
+  <div id="profileEdit__modal">
+    <div id="profileEdit__inner">
+      <button id="profileEdit__close">X</button>
+      <form id="profileEdit__form" action="#">
+        <h2 id="profileEdit__title">Editar perfil</h2>
+        <p id="profileEdit__user">Nome</p>
+        <input id="profileEdit__userInput" type="text" placeholder="Júlia Silva Camargo">
+        <p id="profileEdit__urlImage">URL da imagem do perfil</p>
+        <input id="profileEdit__imageInput" type="text" placeholder="https://imagem.com.br">
+        <button id="profileEdit__submitButton" type="submit">Salvar alterações</button>
+      </form>
+    </div>
+  </div>
+
+  <header id="header">
+    <div id="header__menu">
+      <h2 id="header__title">KenzieHabit</h2>
+      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
+    </div>
+
+    <div id="user">
+      <img id="user__logo" src="./src/assets/img/Ellipse 2.png" alt="Imagem do usuario">
+      <h2 id="user__name">Júlia Silva Camargo</h2>
+    </div>
+  </header>
+
+  <main id="habits__main">
+    <div id="habits__titleBox">
+      <h3 id="habits__title">Tarefas</h3>
+      <div id="habits__buttons">
+        <button id="habits__all">Todos</button>
+        <button id="habits__concluded">Concluidos</button>
+        <button id="habits__create">Criar</button>
+      </div>
+    </div>
+    <table id="table__habits">
+      <tr id="table__header">
+        <section id="table__section">
+          <h3 id="table__status">Status</h3>
+          <h3 id="table__title">Titulo</h3>
+          <h3 id="table__description">Descrição</h3>
+          <h3 id="table__category">Categoria</h3>
+          <h3 id="table__edit">Editar</h3>
+        </section>
+      </tr>
+      <tr id="table__content">
+        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
+        <td id="table__nameHabit"><label for="table__checkbox">Fazer exercícios segunda pela manhã</label> </td>
+        <td id="table__descriptionHabit">ir correr na praça próxima</td>
+        <td id="table__categoryHabit">Saúde</td>
+        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+      </tr>
+      <tr id="table__content">
+        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
+        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
+        <td id="table__descriptionHabit">ir correr na praça próxima</td>
+        <td id="table__categoryHabit">Saúde</td>
+        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+      </tr>
+      <tr id="table__content">
+        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
+        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
+        <td id="table__descriptionHabit">ir correr na praça próxima</td>
+        <td id="table__categoryHabit">Saúde</td>
+        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+
+      </tr>
+      <tr id="table__content">
+        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
+        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
+        <td id="table__descriptionHabit">ir correr na praça próxima</td>
+        <td id="table__categoryHabit">Saúde</td>
+        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+      </tr>
+    </table>
+
+
   </main>
-  <footer>
-    <button>Carregar mais</button>
+  <footer id="footer">
+    <button id="footer__button">Carregar mais</button>
   </footer>
+
+  <div id="removeHabit__modal">
+    <div id="removeHabit__inner">
+      <button id="removeHabit__close">X</button>
+      <form id="removeHabit__form" action="#">
+        <h2 id="removeHabit__title">Excluir hábito</h2>
+        <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
+        <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
+        <section id="removeHabit__buttons">
+          <button id="removeHabit__cancelButton" type="button">Cancelar</button>
+          <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
+        </section>
+      </form>
+    </div>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+    
+
 </body>
 
 </html>
