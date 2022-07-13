@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    display: none;
 }
 
 #login__inner {
@@ -1304,6 +1305,108 @@ input:checked:hover {
         margin-bottom: 20px;
     }
 
+    #header__logo {
+        width: 100vw;
+        height: 1vh;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        align-items: center;
+    }
+
+
+
+    #header__logo h2 {
+        color: #415AF3;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26.63px;
+        font-family: 'Inter';
+        font-size: normal;
+    }
+
+
+
+    #header__user {
+        width: 100vw;
+        height: 15vh;
+        background-color: #415AF3;
+        display: flex;
+        padding: 20px 300px;
+
+    }
+
+    #header__user img {
+        margin: 0px;
+    }
+
+    #header__user h2 {
+        margin: 10px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: white;
+    }
+
+
+
+    #header__main {
+        background-color: red;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        width: 100vw;
+        height: 5vh;
+    }
+
+
+
+    #table__container {
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+
+
+    #table__container table {
+        padding: 10px;
+        width: 60%;
+        margin: 10px;
+        border: 1px solid rgba(161, 161, 161, 1);
+    }
+
+
+
+    #table__container table th {
+        height: 10px;
+        color: rgba(161, 161, 161, 1);
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: justify;
+        padding: 5px;
+        border-bottom: 1px solid rgba(161, 161, 161, 1);
+    }
+
+    #table__container table td {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 32px;
+        border-bottom: 1px solid rgba(161, 161, 161, 1);
+        padding: 5px;
+    }
+    
+
     #modal__loginerror {
         display: none;
         background-color: #E64445;
@@ -1336,4 +1439,5 @@ input:checked:hover {
         background-color: #e02b2b;
         color: white;
     }
+
 }
