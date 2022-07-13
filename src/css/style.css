@@ -1398,98 +1398,105 @@ input:checked:hover {
     }
 
 
-
-    #table__container {
-        width: 100vw;
-        height: 40vh;
+    #container_table {
         display: flex;
         justify-content: center;
-        padding: 10px;
+        flex-wrap: wrap;
+        max-height: 1000px;
+
     }
 
-
-
-    #table__container table {
-        padding: 10px;
+    #header_table {
         width: 60%;
-        margin: 10px;
-        border: 1px solid rgba(161, 161, 161, 1);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #header_table h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #343A40;
     }
 
 
-
-
-
-    #table__status,
-    #table__title,
-    #table__description,
-    #table__category,
-    #table__edit {
+    #buttons {
         display: flex;
-        justify-content: space-around;
+    }
+
+    #buttons p {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 32px;
-        color: rgba(161, 161, 161, 1);
+        color: #343A40;
+        border: none;
+        padding: 0 10px;
     }
 
-    #table__descriptionHabit {
-        display: flex;
-        color: yellow;
+
+    #criar {
+        background: #415AF3;
+        border: 2px solid #415AF3;;
+        border-radius: 4px;
+        color: white;
+        width: 70px;
     }
 
-    #table__categoryHabit {
-        display: flex;
+
+
+    #tabela {
+        width: 60%;
+        max-height: 300px;
     }
 
-    #table__habits {
-        width: 80%;
+    #tabela tr {
         border: 1px solid rgba(161, 161, 161, 1);
-        height: auto;
-        border-top: none;
+        text-align: justify;
     }
 
-    #table__habits tr {
-        width: auto;
-        display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-    }
 
-    #table__nameHabit,
-    #table__descriptionHabit,
-    #table__categoryHabit {
-        text-align: left;
+    #tabela th {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 0px;
-        color: #343A40;
+        line-height: 32px;
+        color: #A1A1A1;
+        padding: 5px;
     }
 
-    #table__check {
+
+    #tabela td {
+        padding: 10px;
         width: auto;
-        width: 10px;
+        text-align: justify;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
     }
 
-    #table__content,
-    #table__section {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+    #td_description {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #415AF3;
     }
 
-    #table__section {
-        width: 80%;
-        text-align: center;
-        border: 1px solid rgba(161, 161, 161, 1);;
-        padding-bottom: 20px;
-        border-bottom: none;
-    } 
+
+    #tabela tr:hover{
+        background: #F1F3F5;
+    }
+
 
    
 
