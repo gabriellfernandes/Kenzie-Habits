@@ -388,8 +388,6 @@ static createModalEditProfile(){
         create__modal.style.display = "none"
     }
 
-
-    }
 }  
   
   

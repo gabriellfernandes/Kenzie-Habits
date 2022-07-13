@@ -30,7 +30,7 @@ export class UserModal {
                 table__content.appendChild(table__check);
             const table__checkbox = document.createElement('input');
                 table__checkbox.type = "checkbox";
-                table__checkbox = "table__checkbox";
+                table__checkbox.id = "table__checkbox";
                 table__check.appendChild(table__checkbox);
 
             const table__nameHabit = document.createElement('td');
@@ -56,7 +56,7 @@ export class UserModal {
                 table__editButton.id = "table__editButton";
             
             const table__editImg = document.createElement('img');
-                table__editImg.src = "../../assets/img/editbutton.png";
+                table__editImg.src = "./src/assets/img/editarbutton.png";
                 table__editImg.id = "table__editImg";
                 table__editButton.appendChild(table__editImg);
                 table__editTd.appendChild(table__editButton);

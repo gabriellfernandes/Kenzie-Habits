@@ -36,7 +36,7 @@ export class Api {
     }
 
     static async apiCreateHabit(title, description, category) {
-        return await fetch(`${this.baseUrl}/habit`, {
+        return await fetch(`${this.baseUrl}/habits`, {
             method: 'POST',
             headers: this.headers,
             body: JSON.stringify({
