@@ -26,9 +26,7 @@ export class Api {
         return await fetch(`${this.baseUrl}/user/profile`, {
             method: 'PATCH',
             headers: this.headers,
-            body: JSON.stringify({
-                usr_image: igm
-            })
+            body: JSON.stringify(igm)
         }).then(res => res.json()).then(res => {
             localStorage.setItem("@CapStone-User", JSON.stringify(res))
             return res

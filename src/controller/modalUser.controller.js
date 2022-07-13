@@ -2,8 +2,9 @@ export class UserModal {
     static baseTable = document.querySelector("#table__habits");
     static divUser = document.querySelector("#user");
     static modalUser(user) {
-      
-        console.log(user)
+        const header__logo = document.querySelector("#header__logo");
+        header__logo.src = user.usr_image;
+        
         const userIgm = document.createElement('img');
               userIgm.id = "user__logo"
               userIgm.src = user.usr_image;
