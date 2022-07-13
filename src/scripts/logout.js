@@ -3,6 +3,4 @@ export class Logout {
         localStorage.clear()
         window.location.reload()
     }
-
 }
-

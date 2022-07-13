@@ -11,7 +11,7 @@ export class MenuDropdown {
 
     static editProfile() {
         const profileEdit__modal = document.getElementById("profileEdit__modal")
-        profileEdit__modal.style.display = "block"
+        profileEdit__modal.style.display = "flex"
     }
 }
 

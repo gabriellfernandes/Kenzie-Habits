@@ -115,11 +115,7 @@
       </form>
     </div>
   </div>
-  
 
-
-  
-        
   <header id="header">
     <div id="header__menu">
       <h2 id="header__title">KenzieHabit</h2>
@@ -143,8 +139,6 @@
     </div>
   </header>
 
-
-
   <main id="habits__main">
     <div id="habits__titleBox">
       <h3 id="habits__title">Tarefas</h3>
@@ -152,37 +146,12 @@
         <button id="habits__all">Todos</button>
         <button id="habits__concluded">Concluidos</button>
         <button id="habits__create">Criar</button>
-        
+
       </div>
 
     </div>
 
     <table id="table__habits">
-      <tr>
-        <th>Status</th>
-        <th>Título</th>
-        <th>Descrição</th>
-        <th>Categoria</th>
-        <th>Editar</th>
-      </tr>
-
-      <tr>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>Fazer exercícios segunda pela manhã</td>
-        <td>Ir correr na  praça próximo de csa</td>
-        <td id="td_description">Saúde</td>
-        <td>°°°</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- <main id="habits__main">
-
-
-    <table id="table__habits">
-
       <tr id="table__header">
         <section id="table__section">
           <h3 id="table__status">Status</h3>
@@ -192,69 +161,43 @@
           <h3 id="table__edit">Editar</h3>
         </section>
       </tr>
-
       <tr id="table__content">
-        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
-        <td id="table__nameHabit"><label for="table__checkbox">Fazer exercícios segunda pela manhã</label> </td>
-        <td id="table__descriptionHabit">ir correr na praça próxima</td>
-        <td id="table__categoryHabit">Saúde</td>
-        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
-      </tr>
-
-      <tr id="table__content">
-        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
+        <td>
+          <input id="table__checkbox" type="checkbox">
+        </td>
         <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
-        <td id="table__descriptionHabit">ir correr na praça próxima</td>
+        <td id="table__descriptionHabit">Ir correr na praça próximo de csa</td>
         <td id="table__categoryHabit">Saúde</td>
         <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
       </tr>
+    </table>
+    </section>
 
-      <tr id="table__content">
-        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
-        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
-        <td id="table__descriptionHabit">ir correr na praça próxima</td>
-        <td id="table__categoryHabit">Saúde</td>
-        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+    <footer id="footer">
+      <button id="footer__button">Carregar mais</button>
+    </footer>
 
-      </tr>
-      <tr id="table__content">
-        <td id="table__check"><input id="table__checkbox" type="checkbox" name="check" /></td>
-        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
-        <td id="table__descriptionHabit">ir correr na praça próxima</td>
-        <td id="table__categoryHabit">Saúde</td>
-        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
-      </tr>
-    </table> -->
+    <div id="removeHabit__modal">
 
-  </main>
+      <div id="removeHabit__inner">
 
-  <footer id="footer">
-    <button id="footer__button">Carregar mais</button>
-  </footer>
+        <button id="removeHabit__close">X</button>
 
+        <form id="removeHabit__form" action="#">
 
-  <div id="removeHabit__modal">
+          <h2 id="removeHabit__title">Excluir hábito</h2>
+          <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
+          <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
+          <section id="removeHabit__buttons">
+            <button id="removeHabit__cancelButton" type="button">Cancelar</button>
+            <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
+          </section>
 
-    <div id="removeHabit__inner">
+        </form>
 
-      <button id="removeHabit__close">X</button>
+      </div>
 
-      <form id="removeHabit__form" action="#">
-
-        <h2 id="removeHabit__title">Excluir hábito</h2>
-        <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
-        <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
-        <section id="removeHabit__buttons">
-          <button id="removeHabit__cancelButton" type="button">Cancelar</button>
-          <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
-        </section>
-
-      </form>
-
-
-    </div>
-
-    <script type="module" src="./src/scripts/index.js"></script>
+      <script type="module" src="./src/scripts/index.js"></script>
 
 </body>
 
