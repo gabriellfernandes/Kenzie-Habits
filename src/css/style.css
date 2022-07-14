@@ -3,9 +3,10 @@
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     list-style: none;
-    position: absolute;
+    position: fixed;
     transition: all 125ms ease-in;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-right: -20px;
     margin-top: 57px;
     width: 246px;
     height: 124px;
@@ -13,6 +14,7 @@
     align-items: center;
     justify-content: flex-start;
     display: none;
+    position:fixed;
 }
 
 #header__logo:hover {
@@ -472,8 +474,16 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    margin-left: 260px;
-    margin-top: 25px;
+    display: flex;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 270px;
+    position: static;
+}
+
+#edit__close:hover {
+    cursor: pointer;
 }
 
 
@@ -696,8 +706,6 @@ input:checked:hover {
     margin-bottom: 24px;
 }
 
-
-
 #edit__submitButton:hover {
     cursor: pointer;
     background-color: #415AF3;
@@ -736,6 +744,7 @@ input:checked:hover {
     width: 40px;
     height: 40px;
     margin-right: 10px;
+    border-radius: 100px;
 }
 
 #user {
@@ -771,11 +780,9 @@ input:checked:hover {
 
 #habits__main {
     margin-top: 58px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
+
+#habits__titleBox {}
 
 #habits__title {
     width: 73px;
@@ -862,8 +869,9 @@ input:checked:hover {
 #footer {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-top: 50px;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 
 #footer__button {
@@ -1208,8 +1216,12 @@ input:checked:hover {
     align-items: center;
     justify-content: space-around;
     margin-top: 34px;
-    width: 100%;
+    width: 90vw;
+    margin-left: 20px;
     margin-bottom: -20px;
+    border-top: 1.4px solid #EBEBEB;
+    border-left: 1.4px solid #EBEBEB;
+    border-right: 1.4px solid #EBEBEB;
 }
 
 #table__status {
@@ -1220,8 +1232,6 @@ input:checked:hover {
     font-weight: 500;
     font-size: 16px;
     color: #A1A1A1;
-    margin-right: 27px;
-    margin-left: 5px;
 }
 
 #table__title {
@@ -1237,10 +1247,14 @@ input:checked:hover {
 
 #table__description {
     display: none;
+    width: 44px;
+    height: 32px;
 }
 
 #table__category {
     display: none;
+    width: 44px;
+    height: 32px;
 }
 
 #table__edit {
@@ -1251,12 +1265,13 @@ input:checked:hover {
     font-weight: 500;
     font-size: 16px;
     color: #A1A1A1;
-    margin-right: 22.5px;
+    /* margin-right: 22.5px; */
 }
 
 
 #table__content {
-    width: 100vw;
+    width: 90vw;
+    margin-left: 20px;
     height: 49px;
     border: 1.4px solid #E9ECEF;
     display: flex;
@@ -1373,17 +1388,23 @@ input:checked:hover {
         display: block;
         font-family: 'Inter';
         font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #A1A1A1;
     }
 
     #table__category {
         display: block;
         font-family: 'Inter';
         font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #A1A1A1;
     }
 
 
     #table__content {
-        width: 100vw;
+        width: 90vw;
         height: 49px;
         border-bottom: 1.4px solid #E9ECEF;
         display: block;
@@ -1408,6 +1429,12 @@ input:checked:hover {
         font-weight: 500;
         font-size: 14px;
         margin-left: -100px;
+        background: #D7E4FB;
+        border-radius: 4px;
+        color: #415AF3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #table__editButton {
@@ -1421,11 +1448,8 @@ input:checked:hover {
         cursor: pointer;
     }
 
-
-
-
     #profile__modal {
-        margin-left: 500px;
+        margin-left: 550px;
     }
 
     #login__inner {
@@ -1612,8 +1636,6 @@ input:checked:hover {
         width: 70px;
     }
 
-
-
     #table__habits {
         width: 60%;
         max-height: 300px;
@@ -1630,14 +1652,15 @@ input:checked:hover {
         line-height: 22px;
     }
 
-    #td_description {
+    /* #td_description {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
         color: #415AF3;
-    }
+    } */
+
 
     #table__nameHabit {
         display: flex;
@@ -1653,6 +1676,10 @@ input:checked:hover {
         font-size: 16px;
         color: #343A40;
         overflow: hidden;
+    }
+
+    #table__section {
+        width: 90vw;
     }
 
     #table__descriptionHabit {
@@ -1691,5 +1718,40 @@ input:checked:hover {
         display: flex;
         justify-content: space-between;
         width: 80vw;
+    }
+
+    #habits__main {
+        margin-top: 58px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #edit__modal {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.65);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        display: none;
+    }
+
+    #edit__inner {
+        width: 502px;
+        height: 482px;
+    }
+
+    #edit__close {
+        margin-left: 450px;
+    }
+
+    #user {
+        margin-right: 550px;
     }
 }

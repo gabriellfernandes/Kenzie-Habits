@@ -7,6 +7,7 @@ import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
 import { editProfile } from "./editProfie.script.js";
 import { editHabit } from "./editHabit.script.js";
+import { Logout } from "./logout.js";
 
 console.log(localStorage.getItem('@CapStone-Token'))
 
@@ -46,5 +47,6 @@ loginFunction();
 creatHabit();
 itemsTable();
 
-const logoutButton = document.getElementById("header__logout")
+// const logoutButton = document.getElementById("header__logout")
 UserModal.modalUser(JSON.parse(localStorage.getItem('@CapStone-User')));
+
