@@ -22,7 +22,11 @@ export class Checkbox {
                 console.log(document.getElementsByClassName(event.target.className)[1].checked == false)
                 if(document.getElementsByClassName(event.target.className)[1].checked == false){
                     document.getElementsByClassName(event.target.className)[1].checked = false
-                    Api.apiIncompleteHabit(event.target.className)
+                    const table__content = document.getElementsByClassName(event.target.className)[0]
+                    const title = table__content.childNodes[1].innerText
+                    const description = table__content.childNodes[2].innerText
+                    const category = table__content.childNodes[3].innerText
+                    Api.apiIncompleteHabit(event.target.className, title, description, category).then(res => console.log(res))
                 }   
             }
        })

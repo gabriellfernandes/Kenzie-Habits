@@ -65,7 +65,7 @@ export class Api {
         });
     }
 
-    static async apiUpdateHabit(id, title, description, category) {
+    static async apiUpdateHabit(id, title, description, category, complete) {
         return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'PATCH',
             headers: this.headers,
@@ -73,17 +73,21 @@ export class Api {
                 habit_title: title,
                 habit_description: description,
                 habit_category: category,
+                habit_status: complete
             })
         }).then(res => res.json()).then(res => {
             return res
         });
     }
 
-    static async apiIncompleteHabit(id) {
+    static async apiIncompleteHabit(id,title, description, category) {
         return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'PATCH',
             headers: this.headers,
             body: JSON.stringify({
+                habit_title: title,
+                habit_description: description,
+                habit_category: category,
                 habit_status: false
             })
         }).then(res => res.json()).then(res => {
