@@ -7,7 +7,7 @@ export function editHabit() {
 
         Array.from(table__editButton).forEach(element => {
             if (event.target.className.replace(/[^0-9]/g, '') == element.className.replace(/[^0-9]/g, '')) {
-                console.log(element.className.replace(/[^0-9]/g, ''))
+
                 element.addEventListener("click", () => {
                     const edit__modal = document.querySelector("#edit__modal");
                     edit__modal.style.display = "flex";

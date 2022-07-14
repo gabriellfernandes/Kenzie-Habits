@@ -19,7 +19,6 @@ export class Checkbox {
         document.addEventListener("click", (event) => {
             if (event.target.id == "table__checkbox") {
                 Api.apiCompleteHabit(event.target.className)
-                console.log(document.getElementsByClassName(event.target.className)[1].checked == false)
                 if (document.getElementsByClassName(event.target.className)[1].checked == false) {
                     document.getElementsByClassName(event.target.className)[1].checked = false
                     const table__content = document.getElementsByClassName(event.target.className)[0]
