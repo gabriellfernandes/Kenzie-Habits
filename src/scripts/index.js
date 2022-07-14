@@ -6,7 +6,7 @@ import { creatHabit } from "./createhabit.scripts.js";
 import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
 import { editProfile } from "./editProfie.script.js";
-import { editHabit } from "./editHabit.script.js";
+import { editHabit} from "./edithabit.script.js";
 import { Logout } from "./logout.js";
 if (localStorage.getItem('@CapStone-Token') == undefined) {
     localStorage.setItem('@CapStone-Token', null)
