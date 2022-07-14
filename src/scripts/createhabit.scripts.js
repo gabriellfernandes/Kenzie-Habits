@@ -32,7 +32,6 @@ export function creatHabit() {
                 const create__category = document.querySelector("#create__select");
                 const create__categoryValue = create__category.options[create__category.selectedIndex];
                 Api.apiCreateHabit(create__title.value, create__description.value, create__categoryValue.value.toLowerCase()).then(habit => {
-                    console.log(habit.message)
                     if (habit.message == undefined) {
                         create__title.value = "";
                         create__description.value = "";

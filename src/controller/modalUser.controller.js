@@ -3,6 +3,8 @@ export class UserModal {
     static divUser = document.querySelector("#user");
     static cont = 0;
     static modalUser(user) {
+        this.divUser.innerHTML = '';
+        
         const header__logo = document.querySelector("#header__logo");
         header__logo.src = user.usr_image;
 
