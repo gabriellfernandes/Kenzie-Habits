@@ -32,7 +32,8 @@ export class UserModal {
                 table__content.appendChild(table__check);
             const table__checkbox = document.createElement('input');
                 table__checkbox.type = "checkbox";
-                table__checkbox.id = "table__checkbox";
+                table__checkbox.id = `table__checkbox`;
+                table__checkbox.className = `${element.habit_id}`;
                 if(element.habit_status == false){
                     table__check.appendChild(table__checkbox);
                 }else{
