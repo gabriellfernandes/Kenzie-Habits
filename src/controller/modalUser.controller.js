@@ -23,9 +23,9 @@ export class UserModal {
         this.baseTable.innerHTML = '';
         this.cont = 0;
         let limitador = 0
-        console.log(conts)
+
         
-            habit.reverse().forEach((element) => {
+            habit.forEach((element) => {
                 if(limitador  < conts){
                     const table__content = document.createElement('tr');
                         table__content.id = "table__content";
