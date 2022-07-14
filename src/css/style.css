@@ -678,7 +678,7 @@ input[type=checkbox]:hover {
 input:checked {
     background-color: #56CF8E;
     border: 2px solid #56CF8E;
-    background-image: url(/src/assets/img/check.png);
+    background-image: url(./src/assets/img/check.png);
     background-repeat: no-repeat;
     background-position: center;
 }
