@@ -19,10 +19,9 @@ export class UserModal {
 
     static itemHabit(habit){
         this.baseTable.innerHTML = '';
-       
+       this.cont = 0;
 
         habit.forEach(element => {
-            console.log(element)
             const table__content = document.createElement('tr');
                 table__content.id = "table__content";
                 table__content.className = `table ${element.habit_id}`;
@@ -64,17 +63,18 @@ export class UserModal {
             
             const table__editButton = document.createElement('button');
                 table__editButton.id = "table__editButton";
-                table__editButton.className = `btn btn-${this.cont}`;
-                this.cont++;
+                
+                
                 
             
             const table__editImg = document.createElement('img');
                 table__editImg.src = "./src/assets/img/editarbutton.png";
                 table__editImg.id = "table__editImg";
                 table__editImg.className = `btn btn-${this.cont}`;
+                this.cont++;
                 
                 table__editButton.appendChild(table__editImg);
-                table__editTd.appendChild(table__editButton);
+                table__editTd.appendChild(table__editImg);
 
         })
     }
