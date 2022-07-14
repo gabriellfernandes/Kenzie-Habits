@@ -1527,7 +1527,11 @@ input:checked:hover {
     }
 
     #profile__modal {
-        margin-left: 550px;
+        margin-bottom: 0px;
+        display: flex;
+        position: absolute;
+        left: 63%;
+        display: none;
     }
 
     #login__inner {
