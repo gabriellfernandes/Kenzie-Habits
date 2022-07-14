@@ -9,8 +9,8 @@ export function creatHabit() {
         const create__modal = document.querySelector("#create__modal");
         create__modal.style.display = "flex";
 
-        
-   
+
+
         const create__close = document.querySelector("#create__close");
         create__close.addEventListener("click", () => {
             create__modal.style.display = "none";
@@ -19,14 +19,14 @@ export function creatHabit() {
             create__title.value = "";
             create__description.value = "";
             event.preventDefault();
-            
+
         })
-        if(cont == 0){
-                cont++
-                const create__form = document.querySelector("#create__form");
-                create__form.addEventListener("submit", (event) => {
+        if (cont == 0) {
+            cont++
+            const create__form = document.querySelector("#create__form");
+            create__form.addEventListener("submit", (event) => {
                 event.preventDefault();
-            
+
                 const create__title = document.querySelector("#create__habitInput");
                 const create__description = document.querySelector("#create__descriptionInput");
                 const create__category = document.querySelector("#create__select");
@@ -43,22 +43,22 @@ export function creatHabit() {
                             title: 'Habito criado com sucesso!',
                             showConfirmButton: false,
                             timer: 1500
-                          })
-                        return itemsTable();   
-                    }else{
+                        })
+                        return itemsTable();
+                    } else {
                         Swal.fire({
                             position: 'top-center',
                             icon: 'error',
-                            title: habit.message ==  "habit_title obrigatório" ? "Título obrigatório" : habit.message == "habit_description obrigatório" ? "Descrição obrigatória" : "Categoria obrigatória",
+                            title: habit.message == "habit_title obrigatório" ? "Título obrigatório" : habit.message == "habit_description obrigatório" ? "Descrição obrigatória" : "Categoria obrigatória",
                             showConfirmButton: false,
                             timer: 2000
-                          })
+                        })
                     }
                 })
             })
-        }else{
+        } else {
             return
         }
-        
+
     })
 }
