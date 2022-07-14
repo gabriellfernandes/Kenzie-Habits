@@ -1,10 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kenzie Habit</title>
-  </head>
-  <body></body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  <title>Kenzie Habit</title>
+</head>
+
+
+<body id="body">
+
+  <div id="login__modal">
+    <div id="login__inner">
+      <div id="login_call">
+        <h1 id="login__title">KenzieHabit</h1>
+        <h2 id="login__subtitle">If you are going to use a passage of Lorem Ipsum</h2>
+        <p id="login__paragraph">you need to be sure there isn't anything</p>
+      </div>
+      <form id="login__form" action="#">
+        <h2 id="login__login">Login</h2>
+        <p id="login__user">Usuário</p>
+        <input id="login__emailInput" type="email" placeholder="E-mail">
+        <p id="login__password">Senha</p>
+        <input id="login__passwordInput" type="password" placeholder="Senha">
+        <button id="login__submitButton" type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal__loginerror">
+    <p>Error</p>
+    <button id="modal__loginbutton">X</button>
+  </div>
+
+  <div id="create__modal">
+    <div id="create__inner">
+      <button id="create__close">X</button>
+      <form id="create__form" action="#">
+        <h2 id="create__title">Criar hábito</h2>
+        <p id="create__habitTitle">Título</p>
+        <input id="create__habitInput" type="text" placeholder="Digitar título">
+        <p id="create__description">Descrição</p>
+        <input id="create__descriptionInput" type="text" placeholder="Digitar descrição">
+        <p id="create__category">Categoria</p>
+        <select name="categoria" id="create__select" placeholder="selecione categoria">
+          <option value="" disabled selected>Selecionar categoria</option>
+          <option value="casa">Casa</option>
+          <option value="estudos">Estudo</option>
+          <option value="lazer">Lazer</option>
+          <option value="trabalho">Trabalho</option>
+          <option value="saude">Saúde</option>
+        </select>
+        <button id="create__submitButton" type="submit">Inserir</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="edit__modal">
+    <div id="edit__inner">
+      <button id="edit__close">X</button>
+      <form id="edit__form" action="#">
+        <h2 id="edit__title">Editar hábito</h2>
+        <p id="edit__habitTitle">Título</p>
+        <input id="edit__habitInput" type="text" placeholder="Digitar título">
+        <p id="edit__description">Descrição</p>
+        <input id="edit__descriptionInput" type="text" placeholder="Digitar descrição">
+        <p id="edit__category">Categoria</p>
+        <select name="categoria" id="edit__select" placeholder="selecione categoria">
+          <option value="" disabled selected>Selecionar categoria</option>
+          <option value="casa">Casa</option>
+          <option value="estudos">Estudo</option>
+          <option value="lazer">Lazer</option>
+          <option value="trabalho">Trabalho</option>
+          <option value="saude">Saúde</option>
+        </select>
+        <section id="edit__check">
+          <p id="edit__status">Status</p><input type="checkbox" name="" id="edit__checkbox">
+        </section>
+        <button id="edit__delete" type="button">Excluir</button>
+        <button id="edit__submitButton" type="submit">Salvar alterações</button>
+      </form>
+    </div>
+  </div>
+
+
+  <div id="profileEdit__modal">
+    <div id="profileEdit__inner">
+      <button id="profileEdit__close">X</button>
+      <form id="profileEdit__form" action="#">
+        <h2 id="profileEdit__title">Editar perfil</h2>
+        <p id="profileEdit__user">Nome</p>
+        <input id="profileEdit__userInput" type="text" placeholder="Júlia Silva Camargo">
+        <p id="profileEdit__urlImage">URL da imagem do perfil</p>
+        <input id="profileEdit__imageInput" type="text" placeholder="https://imagem.com.br">
+        <button id="profileEdit__submitButton" type="submit">Salvar alterações</button>
+      </form>
+    </div>
+  </div>
+
+  <header id="header">
+    <div id="header__menu">
+      <h2 id="header__title">KenzieHabit</h2>
+      <img id="header__logo" src="./src/assets/img/Perfil3.png" alt="Imagem do usuario">
+    </div>
+
+    <div id="profile__modal">
+      <div id="profile__inner">
+        <div id="profile__content">
+          <ul>
+            <li><button id="profile__edit"><img id="profile__editLogo" src="./src/assets/img/user.png" alt=""> Editar
+                Perfil</button></li>
+            <li><button id="profile__logout"><img id="profile__logoutLogo" src="./src/assets/img/user (1).png" alt="">
+                Sair do app</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="user">
+    </div>
+  </header>
+
+  <main id="habits__main">
+    <div id="habits__titleBox">
+      <h3 id="habits__title">Tarefas</h3>
+      <div id="habits__buttons">
+        <button id="habits__all">Todos</button>
+        <button id="habits__concluded">Concluidos</button>
+        <button id="habits__create">Criar</button>
+
+      </div>
+
+    </div>
+
+    <table id="table__habits">
+      <tr id="table__header">
+        <section id="table__section">
+          <h3 id="table__status">Status</h3>
+          <h3 id="table__title">Titulo</h3>
+          <h3 id="table__description">Descrição</h3>
+          <h3 id="table__category">Categoria</h3>
+          <h3 id="table__edit">Editar</h3>
+        </section>
+      </tr>
+      <tr id="table__content">
+        <td>
+          <input id="table__checkbox" type="checkbox">
+        </td>
+        <td id="table__nameHabit">Fazer exercícios segunda pela manhã</td>
+        <td id="table__descriptionHabit">Ir correr na praça próximo de csa</td>
+        <td id="table__categoryHabit">Saúde</td>
+        <td><button id="table__editButton"><img src="./src/assets/img/editarbutton.png" alt=""></button></td>
+      </tr>
+    </table>
+    </section>
+
+    <footer id="footer">
+      <button id="footer__button">Carregar mais</button>
+    </footer>
+
+    <div id="removeHabit__modal">
+      <div id="removeHabit__inner">
+
+        <button id="removeHabit__close">X</button>
+
+        <form id="removeHabit__form" action="#">
+
+          <h2 id="removeHabit__title">Excluir hábito</h2>
+          <h2 id="removeHabit__text">Certeza que deseja excluir este hábito?</h2>
+          <p id="removeHabit__paragraph">Após executar essa ação não será possível desfazer</p>
+          <section id="removeHabit__buttons">
+            <button id="removeHabit__cancelButton" type="button">Cancelar</button>
+            <button id="removeHabit__submitButton" type="submit">Sim, excluir este hábito</button>
+          </section>
+
+        </form>
+
+      </div>
+
+      <script type="module" src="./src/scripts/index.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
 </html>
