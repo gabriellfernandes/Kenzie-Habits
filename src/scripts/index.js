@@ -9,6 +9,7 @@ import { editProfile } from "./editProfie.script.js";
 import { editHabit} from "./edithabit.script.js";
 import { Logout } from "./logout.js";
 import { carregarMais } from "./loadingitens.script.js";
+import { filterConcluded } from "./filteCategory.scrips.js";
 if (localStorage.getItem('@CapStone-Token') == undefined) {
     localStorage.setItem('@CapStone-Token', null)
 }
@@ -35,6 +36,7 @@ itemsTable();
 editProfile();
 editHabit();
 carregarMais();
+filterConcluded();
 
 
 Checkbox.checkBoxComplete();
