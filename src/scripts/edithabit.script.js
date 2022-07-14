@@ -51,6 +51,7 @@ export function editHabit() {
                         const edit__form = document.querySelector("#edit__form");
                         edit__form.addEventListener("submit", event => {
                             event.preventDefault();
+                            
                             const table = document.getElementsByClassName("table")[element.className.replace(/[^0-9]/g, '')];
                             const habit_id = table.className.replace(/[^0-9]/g, '');
                             const edit__habitInput = document.querySelector("#edit__habitInput");
@@ -61,15 +62,17 @@ export function editHabit() {
                             if (edit__checkbox.checked == true) {
                                 Api.apiCompleteHabit(habit_id)
                             }
+                            
+                            cont++
+                            if (cont > 1) { return }
+                            
                             Api.apiUpdateHabit(habit_id, edit__habitInput.value, edit__descriptionInput.value, edit__selectvalue.value.toLowerCase()).then(habit => {
                                 if (habit.message == undefined) {
                                     edit__habitInput.value = "";
                                     edit__descriptionInput.value = "";
-                                    edit__selectvalue.value = "";
                                     edit__checkbox.checked = false;
                                     edit__modal.style.display = "none";
                                     Api.apiGetHabits().then(habits => { UserModal.itemHabit(habits) })
-                                    cont++
                                 } else {
                                     cont++
                                     Swal.fire({
