@@ -28,6 +28,13 @@ export function editHabit(){
                             return Api.apiDeleteHabit(habit_id).then(habit => {
                                 if(habit.message != undefined){
                                     edit__modal.style.display = "none";
+                                    Swal.fire({
+                                        position: 'top-center',
+                                        icon: 'success',
+                                        title: 'Habito excluido com sucesso!',
+                                        showConfirmButton: false,
+                                        timer: 1500
+                                      })
                                     Api.apiGetHabits().then(habits => {UserModal.itemHabit(habits)})
                                     
                                 }else{
@@ -64,7 +71,14 @@ export function editHabit(){
                                     Api.apiGetHabits().then(habits => {UserModal.itemHabit(habits)})
                                     cont++
                                 }else{
-                                    alert(habit.message)
+                                    cont++
+                                    Swal.fire({
+                                        position: 'top-center',
+                                        icon: 'error',
+                                        title: habit.message ==  "habit_title obrigatório" ? "Título obrigatório" : habit.message == "habit_description obrigatório" ? "Descrição obrigatória" : "Categoria obrigatória",
+                                        showConfirmButton: false,
+                                        timer: 2000
+                                      })
                                 }
                             })
                         })
