@@ -6,10 +6,8 @@ import { creatHabit } from "./createhabit.scripts.js";
 import { Checkbox } from "./checkbox.js";
 import { MenuDropdown } from "./modalEdit.js";
 import { editProfile } from "./editProfie.script.js";
-import { editHabit } from "./editHabit.script.js";
+import { editHabit} from "./editHabit.script.js";
 import { Logout } from "./logout.js";
-
-console.log(localStorage.getItem('@CapStone-Token'))
 
 if (localStorage.getItem('@CapStone-Token') != null) {
     const modalLogin = document.getElementById('login__modal');
@@ -18,12 +16,14 @@ if (localStorage.getItem('@CapStone-Token') != null) {
     const modalLogin = document.getElementById('login__modal');
     modalLogin.style.display = 'flex';
 }
-
+creatHabit();
 loginFunction();
 itemsTable();
-creatHabit();
 editProfile();
 editHabit();
+
+UserModal.modalUser(JSON.parse(localStorage.getItem('@CapStone-User')));
+Checkbox.checkBoxComplete();
 
 const checkbox = document.getElementById("table__checkbox")
 checkbox.addEventListener("click", Checkbox.check)
@@ -43,10 +43,4 @@ profileEdit__close.addEventListener("click", Modais.closeEdit)
 const create__close = document.getElementById("create__close")
 create__close.addEventListener("click", Modais.closeCreate)
 
-loginFunction();
-creatHabit();
-itemsTable();
-
-// const logoutButton = document.getElementById("header__logout")
-UserModal.modalUser(JSON.parse(localStorage.getItem('@CapStone-User')));
-
+const logoutButton = document.getElementById("header__logout")

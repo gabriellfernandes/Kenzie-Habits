@@ -19,7 +19,7 @@ export class Api {
             localStorage.setItem("@CapStone-User", JSON.stringify(res.response))
             localStorage.setItem("@CapStone-Token", res.token)
             return res
-        }).catch(err => console.log(err));
+        });
     }
 
     static async apiUpdateUser(igm) {
@@ -30,7 +30,7 @@ export class Api {
         }).then(res => res.json()).then(res => {
             localStorage.setItem("@CapStone-User", JSON.stringify(res))
             return res
-        }).catch(err => console.log(err));
+        });
     }
 
     static async apiCreateHabit(title, description, category) {
@@ -44,7 +44,7 @@ export class Api {
             })
         }).then(res => res.json()).then(res => {
             return res
-        }).catch(err => console.log(err));
+        });
     }
 
     static async apiGetHabits() {
@@ -53,7 +53,7 @@ export class Api {
             headers: this.headers
         }).then(res => res.json()).then(res => {
             return res
-        }).catch(err => console.log(err));;
+        });;
     }
 
     static async apiGetHabitCategory(category) {
@@ -62,27 +62,43 @@ export class Api {
             headers: this.headers
         }).then(res => res.json()).then(res => {
             return res
-        }).catch(err => console.log(err));
+        });
     }
 
-    static async apiUpdateHabit(id, title, description, category) {
+    static async apiUpdateHabit(id, title, description, category, complete) {
         return await fetch(`${this.baseUrl}/habits/${id}`, {
             method: 'PATCH',
             headers: this.headers,
             body: JSON.stringify({
                 habit_title: title,
                 habit_description: description,
-                habit_category: category
+                habit_category: category,
+                habit_status: complete
             })
         }).then(res => res.json()).then(res => {
             return res
-        }).catch(err => console.log(err));
+        });
+    }
+
+    static async apiIncompleteHabit(id,title, description, category) {
+        return await fetch(`${this.baseUrl}/habits/${id}`, {
+            method: 'PATCH',
+            headers: this.headers,
+            body: JSON.stringify({
+                habit_title: title,
+                habit_description: description,
+                habit_category: category,
+                habit_status: false
+            })
+        }).then(res => res.json()).then(res => {
+            return res
+        });
     }
 
     static async apiCompleteHabit(id) {
         return await fetch(`${this.baseUrl}/habits/complete/${id}`, { 
             method: 'PATCH',
-            headers: this.headers}).then(res => res.json()).then(res => res).catch(err => console.log(err));
+            headers: this.headers}).then(res => res.json()).then(res => res);
     }
 
     static async apiDeleteHabit(id) {
@@ -91,6 +107,6 @@ export class Api {
             headers: this.headers
         }).then(res => res.json()).then(res => {
             return res
-        }).catch(err => console.log(err));
+        });
     }
 }
