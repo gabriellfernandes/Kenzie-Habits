@@ -19,7 +19,7 @@ export class UserModal {
 
     static itemHabit(habit){
         this.baseTable.innerHTML = '';
-       this.cont = 0;
+        this.cont = 0;
 
         habit.forEach(element => {
             const table__content = document.createElement('tr');
