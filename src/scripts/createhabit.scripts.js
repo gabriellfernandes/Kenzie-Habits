@@ -37,7 +37,22 @@ export function creatHabit() {
                         create__title.value = "";
                         create__description.value = "";
                         create__modal.style.display = "none";
+                        Swal.fire({
+                            position: 'top-center',
+                            icon: 'success',
+                            title: 'Habito criado com sucesso!',
+                            showConfirmButton: false,
+                            timer: 1500
+                          })
                         return itemsTable();   
+                    }else{
+                        Swal.fire({
+                            position: 'top-center',
+                            icon: 'error',
+                            title: habit.message ==  "habit_title obrigatório" ? "Título obrigatório" : habit.message == "habit_description obrigatório" ? "Descrição obrigatória" : "Categoria obrigatória",
+                            showConfirmButton: false,
+                            timer: 2000
+                          })
                     }
                 })
             })
